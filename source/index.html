@@ -7,13 +7,13 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/header/logo-mobile.svg" width="33" height="37"
-        alt=" Картинка Кота энерджи.">
+  <header class="header">
+    <a class="header__logo logo">
+      <img class="header__logo-image" src="img/header/logo-mobile.svg" width="33" height="37" alt=" Логотип компании.">
     </a>
     <a class="logo-text">
-      <img class="logo-text-image" src="img/header/logo-text.svg" width="101" height="18" alt="Кэт энерджи.">
+      <img class="logo-text-image" src="img/header/logo-text.svg" width="101" height="18"
+        alt="Текстовый логотип компании.">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
@@ -21,18 +21,18 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a>
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
-              каталог продукции
+            <a class="site-list__link" href="catalog.html">
+              Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="#">
-              подбор программы
+            <a class="site-list__link" href="form.html">
+              Подбор программы
             </a>
           </li>
         </ul>
@@ -42,12 +42,12 @@
   <main class="main-container">
     <section class="stats">
       <div class="stats__wrapper">
-        <h1 class="stats__title">Функциональное питание для котов</h1>
+        <h1 class=" title title--home">Функциональное питание для котов</h1>
         <p class="stats__description">Занялся собой? Займись котом!</p>
         <img class="stats__image" src="img/stats/jar-of-chicken.png" width="280" height="270"
           alt="Корм со вкусом курицы.">
-        <button class="stats__programm-card" type="button"> <span class="programm-card-title">подобрать программу</span>
-        </button>
+        <a class="stats__programm-card" href="form.html"> Подобрать программу
+        </a>
       </div>
     </section>
     <section class="features">
@@ -58,15 +58,15 @@
             <h3 class="features__title ">похудение</h3>
             <p class="features__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
               Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <button class="features-card" type="button"> <span class="features-card-title">каталог slim</span>
-            </button>
+            <a class="features-card" href="catalog.html">каталог Slim
+            </a>
           </li>
-          <li class="features__item">
-            <h3 class="features__title features__item--weight-gain">Набор массы</h3>
+          <li class="features__item features__item--weight-gain">
+            <h3 class="features__title">Набор массы</h3>
             <p class="features__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy
               Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <button class="features-card" type="button"> <span class="features-card-title">каталог pro</span>
-            </button>
+            <a class="features-card" href="catalog.html"> Каталог Pro
+            </a>
           </li>
         </ul>
       </div>
@@ -99,13 +99,14 @@
           часов в день. </p>
         <ul class="statistics__list">
           <li class="statistics__item">
-            <h2 class="statistics__title">5 КГ</h2>
-            <p class="statistics__text">снижение веса</p>
+            <h2 class="statistics__title">5 кг</h2>
+            <p class="statistics__text">Снижение веса</p>
           </li>
           <li class="statistics__item">
-            <h2 class="statistics__title">60 ДНЕЙ</h2>
-            <p class="statistics__text">затрачено времени</p>
+            <h2 class="statistics__title">60 дней</h2>
+            <p class="statistics__text">Затрачено времени</p>
           </li>
+        </ul>
       </div>
     </section>
 
@@ -127,7 +128,7 @@
     </section>
     <section class="address">
       <div class="address__wrapper">
-        <h2 class="address__title">приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="address__text">ул. Большая Конюшенная, д. 19/8Санкт-Петербург</p>
       </div>
     </section>
@@ -139,28 +140,26 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <div class="main-footer__logo logo">
-        <a class="logo__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="logo-text-image" src="img/header/logo-text.svg" width="128" height="24" alt="Кэт энерджи.">
-        </a>
-      </div>
-      <div class="main-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в
-              Ютубе</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-          </li>
-        </ul>
-      </div>
-      <div class="main-footer__logo-html-academy logo-html-academy">
-        <a class="logo-html-academy__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+      <a class=" main-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="logo-text-image" src="img/header/logo-text.svg" width="128" height="24" alt="Кэт энерджи.">
+      </a>
+      <ul class="main-footer__social-list">
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link main-footer__social-link--vkontakte" href="https://vk.com/htmlacademy">Мы в
+            Вконтакте</a>
+        </li>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link main-footer__social-link--youtube"
+            href="https://www.youtube.com/user/htmlacademyru">Мы в
+            Ютубе</a>
+        </li>
+        <li class="main-footer__social-link__social-item">
+          <a class="main-footer__social-link main-footer__social-link--telegram" href="https://t.me/htmlacademy">Мы в
+            Телеграме</a>
+        </li>
+      </ul>
+      <a class="main-footer__logo-html-academy-link main-footer__logo-html-academy-link--html"
+        href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
 
