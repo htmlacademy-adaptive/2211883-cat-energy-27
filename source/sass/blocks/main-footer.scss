@@ -12,31 +12,31 @@
 .main-footer__social-link {
   &--vkontakte {
     &::after {
-      content: url("/img/footer/vkontakte.svg");
+      content: url("../img/footer/vkontakte.svg");
     }
 
     &:hover::after {
-      content: url("/img/footer/vkontakte-green.svg");
+      content: url("../img/footer/vkontakte-green.svg");
     }
   }
 
   &--youtube {
     &::after {
-      content: url("/img/footer/youtube.svg");
+      content: url("../img/footer/youtube.svg");
     }
 
     &:hover::after {
-      content: url("/img/footer/youtube-green.svg");
+      content: url("../img/footer/youtube-green.svg");
     }
   }
 
   &--telegram {
     &::after {
-      content: url("/img/footer/telegram.svg");
+      content: url("../img/footer/telegram.svg");
     }
 
     &:hover::after {
-      content: url("/img/footer/telegram-green.svg");
+      content: url("../img/footer/telegram-green.svg");
     }
   }
 
@@ -89,11 +89,11 @@
   margin: 22px 20px;
 
   &::after {
-    content: url("/img/footer/logo-html-academy.svg");
+    content: url("../img/footer/logo-html-academy.svg");
   }
 
   &:hover::after {
-    content: url("/img/footer/logo-html-academy-green.svg");
+    content: url("../img/footer/logo-html-academy-green.svg");
   }
 
   &:active {
