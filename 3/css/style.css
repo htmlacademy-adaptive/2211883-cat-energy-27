@@ -42,28 +42,28 @@
 
 @font-face {
   font-family: "Oswald";
-  src: url("../../fonts/oswald/oswaldregular.woff") format("woff2"), url("../../fonts/oswald/oswaldregular.woff") format("woff");
+  src: url("/fonts/oswald/oswaldregular.woff") format("woff2"), url("/fonts/oswald/oswaldregular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url("../../fonts/oswald/oswaldmedium.woff2") format("woff2"), url("../../fonts/oswald/oswaldmedium.woff") format("woff");
+  src: url("/fonts/oswald/oswaldmedium.woff2") format("woff2"), url("/fonts/oswald/oswaldmedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Oswald";
-  src: url("../../fonts/oswald/oswaldmedium.woff2") format("woff2"), url("../../fonts/oswald/oswaldmedium.woff") format("woff");
+  src: url("/fonts/oswald/oswaldmedium.woff2") format("woff2"), url("/fonts/oswald/oswaldmedium.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Lato";
-  src: url("../../fonts/lato/lato-regular.woff2") format("woff2"), url("../../fonts/lato/lato-regular.woff") format("woff");
+  src: url("/fonts/lato/lato-regular.woff2") format("woff2"), url("/fonts/lato/lato-regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -92,7 +92,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  background-image: url("../../img/main-nav/menu-icon.svg");
+  background-image: url("/img/main-nav/menu-icon.svg");
 }
 .main-nav__toggle--active {
   background-image: none;
@@ -165,7 +165,7 @@
 
 .stats__wrapper {
   padding: 26px 20px 20px;
-  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/stats/cat-main-background.png");
+  background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/stats/cat-main-background.png");
   background-repeat: no-repeat, no-repeat;
   background-size: auto 302px, auto auto;
 }
@@ -244,7 +244,7 @@
 }
 
 .features__item--weight-loss {
-  background-image: url("../../img/features/cat-weight-loss.svg");
+  background-image: url("/img/features/cat-weight-loss.svg");
   background-repeat: no-repeat;
   background-position: 21px 22px;
 }
@@ -269,18 +269,18 @@
   padding: 4px 9px 4px 0;
 }
 .features-card::after {
-  content: url("../../img/features/features-arrow.svg");
+  content: url("/img/features/features-arrow.svg");
   margin-left: 15px;
 }
 .features-card:hover::after {
-  content: url("../../img/features/features-arrow-hover.svg");
+  content: url("/img/features/features-arrow-hover.svg");
 }
 .features-card:active {
   opacity: 0.3;
 }
 
 .features__item--weight-gain {
-  background-image: url("../../img/features/cat-weight-gain.svg");
+  background-image: url("/img/features/cat-weight-gain.svg");
   background-repeat: no-repeat;
   background-position: 13px 24px;
 }
@@ -323,28 +323,28 @@
 }
 
 .benefits__item--leaf {
-  background-image: url("../../img/benefits/leaft.svg");
+  background-image: url("/img/benefits/leaft.svg");
   background-repeat: no-repeat;
   background-position: 20px;
   background-size: 60px 60px;
 }
 
 .benefits__item--powder {
-  background-image: url("../../img/benefits/powder.svg");
+  background-image: url("/img/benefits/powder.svg");
   background-repeat: no-repeat;
   background-position: 20px;
   background-size: 60px 60px;
 }
 
 .benefits__item--cutlery {
-  background-image: url("../../img/benefits/cutlery.svg");
+  background-image: url("/img/benefits/cutlery.svg");
   background-repeat: no-repeat;
   background-position: 20px;
   background-size: 60px 60px;
 }
 
 .benefits__item--watch {
-  background-image: url("../../img/benefits/watch.svg");
+  background-image: url("/img/benefits/watch.svg");
   background-repeat: no-repeat;
   background-position: 20px;
   background-size: 60px 60px;
@@ -500,22 +500,22 @@
 }
 
 .main-footer__social-link--vkontakte::after {
-  content: url("../../img/footer/vkontakte.svg");
+  content: url("/img/footer/vkontakte.svg");
 }
 .main-footer__social-link--vkontakte:hover::after {
-  content: url("../../img/footer/vkontakte-green.svg");
+  content: url("/img/footer/vkontakte-green.svg");
 }
 .main-footer__social-link--youtube::after {
-  content: url("../../img/footer/youtube.svg");
+  content: url("/img/footer/youtube.svg");
 }
 .main-footer__social-link--youtube:hover::after {
-  content: url("../../img/footer/youtube-green.svg");
+  content: url("/img/footer/youtube-green.svg");
 }
 .main-footer__social-link--telegram::after {
-  content: url("../../img/footer/telegram.svg");
+  content: url("/img/footer/telegram.svg");
 }
 .main-footer__social-link--telegram:hover::after {
-  content: url("../../img/footer/telegram-green.svg");
+  content: url("/img/footer/telegram-green.svg");
 }
 .main-footer__social-link:active::after {
   opacity: 0.3;
@@ -563,10 +563,10 @@
   margin: 22px 20px;
 }
 .main-footer__logo-html-academy-link::after {
-  content: url("../../img/footer/logo-html-academy.svg");
+  content: url("/img/footer/logo-html-academy.svg");
 }
 .main-footer__logo-html-academy-link:hover::after {
-  content: url("../../img/footer/logo-html-academy-green.svg");
+  content: url("/img/footer/logo-html-academy-green.svg");
 }
 .main-footer__logo-html-academy-link:active {
   opacity: 0.3;
@@ -688,7 +688,7 @@
   margin-top: 58px;
 }
 .product-cards__item--plus::before {
-  content: url("../../img/product-cards/plus.svg");
+  content: url("/img/product-cards/plus.svg");
   width: 30px;
   height: 30px;
   position: absolute;
@@ -822,11 +822,11 @@
 .additional-goods__gift-wrapper {
   min-height: 290px;
   position: relative;
-  background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/additional-goods/gift-background.png");
+  background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/additional-goods/gift-background.png");
   background-size: cover;
 }
 .additional-goods__gift-wrapper::before {
-  content: url("../../img/additional-goods/icon_gift.svg");
+  content: url("/img/additional-goods/icon_gift.svg");
   position: absolute;
   top: 58px;
   left: 101px;
@@ -948,14 +948,14 @@
 
 .field-email {
   padding: 14px 0 13px 15px;
-  background-image: url("../../img/cat-data/email-icon.svg");
+  background-image: url("/img/cat-data/email-icon.svg");
   background-repeat: no-repeat;
   background-position: center right 15px;
 }
 
 .field-phone {
   padding: 15px 0 14px 15px;
-  background-image: url("../../img/cat-data/phone-icon.svg");
+  background-image: url("/img/cat-data/phone-icon.svg");
   background-repeat: no-repeat;
   background-position: center right 15px;
 }
@@ -1072,7 +1072,7 @@
   position: absolute;
   top: 8.09px;
   left: 6.25px;
-  content: url("../../img/objective/checkbox-active-icon.svg");
+  content: url("/img/objective/checkbox-active-icon.svg");
   background: none;
 }
 .control-input + .control-mark {
