@@ -1,1 +1,17 @@
-// Начните писать стили здесь
+@use "./blocks/header.scss";
+@use "./blocks/page.scss";
+@use "./blocks/main-nav.scss";
+@use "./blocks/site-list.scss";
+@use "./blocks/title.scss";
+@use "./blocks/stats.scss";
+@use "./blocks/features.scss";
+@use "./blocks/benefits.scss";
+@use "./blocks/statistics.scss";
+@use "./blocks/address.scss";
+@use "./blocks/main-footer.scss";
+@use "./blocks/main-catalog.scss";
+@use "./blocks/product-cards.scss";
+@use "./blocks/additional-goods.scss";
+@use "./blocks/cat-data.scss";
+@use "./blocks/objective.scss";
+@use "./blocks/additionally.scss";

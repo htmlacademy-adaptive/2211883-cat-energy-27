@@ -1,0 +1,68 @@
+.benefits__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 42px;
+}
+
+.benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.benefits__text {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  margin-left: 100px;
+  text-align: left;
+  min-height: 60px;
+}
+
+.benefits__item--leaf {
+  background-image: url("../../img/benefits/leaft.svg");
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-size: 60px 60px;
+}
+
+.benefits__item--powder {
+  background-image: url("../../img/benefits/powder.svg");
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-size: 60px 60px;
+}
+
+.benefits__item--cutlery {
+  background-image: url("../../img/benefits/cutlery.svg");
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-size: 60px 60px;
+}
+
+.benefits__item--watch {
+  background-image: url("../../img/benefits/watch.svg");
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-size: 60px 60px;
+}
+
+.benefits__wrapper {
+  margin-bottom: 74px;
+}

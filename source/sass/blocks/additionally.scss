@@ -1,0 +1,15 @@
+.additionally {
+  padding: 0;
+  margin: 0;
+  border: none;
+  margin-bottom: 34px;
+}
+
+.additionally__list {
+  padding: 0;
+  margin: 0 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
