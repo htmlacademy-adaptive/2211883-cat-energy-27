@@ -33,7 +33,7 @@
 }
 
 .features__item--weight-loss {
-  background-image: url("../../img/features/cat-weight-loss.svg");
+  background-image: url("/img/features/cat-weight-loss.svg");
   background-repeat: no-repeat;
   background-position: 21px 22px;
 }
@@ -58,12 +58,12 @@
   padding: 4px 9px 4px 0;
 
   &::after {
-    content: url("../../img/features/features-arrow.svg");
+    content: url("/img/features/features-arrow.svg");
     margin-left: 15px;
   }
 
   &:hover::after {
-    content: url("../../img/features/features-arrow-hover.svg");
+    content: url("/img/features/features-arrow-hover.svg");
   }
 
   &:active {
@@ -72,7 +72,7 @@
 }
 
 .features__item--weight-gain {
-  background-image: url("../../img/features/cat-weight-gain.svg");
+  background-image: url("/img/features/cat-weight-gain.svg");
   background-repeat: no-repeat;
   background-position: 13px 24px;
 }

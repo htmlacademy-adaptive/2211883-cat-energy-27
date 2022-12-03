@@ -98,11 +98,11 @@
 .additional-goods__gift-wrapper {
   min-height: 290px;
   position: relative;
-  background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../img/additional-goods/gift-background.png");
+  background: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/additional-goods/gift-background.png");
   background-size: cover;
 
   &::before {
-    content: url("../../img/additional-goods/icon_gift.svg");
+    content: url("/img/additional-goods/icon_gift.svg");
     position: absolute;
     top: 58px;
     left: 101px;
