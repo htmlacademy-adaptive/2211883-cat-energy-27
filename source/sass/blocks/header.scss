@@ -6,20 +6,6 @@
   position: relative;
 }
 
-.logo-text {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-}
-
 .header__logo {
   cursor: pointer;
 

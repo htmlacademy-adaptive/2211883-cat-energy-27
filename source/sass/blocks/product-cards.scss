@@ -27,7 +27,7 @@
   font-size: 12px;
   line-height: 16px;
   text-decoration: none;
-  color: #444444;
+  color: $special_dark-grey;
 
   &--value {
     text-align: end;
@@ -57,7 +57,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $basic-green-2;
   }
 
   &:active {
@@ -83,12 +83,12 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: #444444;
+  color: $special_dark-grey;
   background: hsl(0, 0%, 95%);
   cursor: pointer;
 
   &:hover {
-    background-color: #ebebeb;
+    background-color: $special_grey-2;
   }
 
   &:active {
@@ -99,7 +99,7 @@
 .product-cards__item {
   padding: 20px 20px 26px;
   position: relative;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid $special_grey-2;
 
   &--plus {
     margin-top: 58px;
@@ -138,7 +138,7 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: #444444;
+  color: $special_dark-grey;
   margin: 0;
   margin-bottom: 22px;
 }

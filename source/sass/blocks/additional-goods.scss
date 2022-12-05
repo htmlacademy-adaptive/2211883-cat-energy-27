@@ -12,7 +12,7 @@
   line-height: 24px;
   text-align: left;
   color: #000000;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $special_grey;
 }
 
 .additional-goods__list {
@@ -23,7 +23,7 @@
 
 .additional-goods__item {
   padding: 13px 0 19px;
-  border-bottom: 1px solid #cdcdcd;
+  border-bottom: 1px solid $special_grey;
 }
 
 .additional-goods__item-title {
@@ -38,7 +38,7 @@
   align-items: center;
   text-align: center;
   text-transform: uppercase;
-  color: #222222;
+  color: $special_dark-grey-2;
 }
 
 .additional-goods__table {
@@ -65,11 +65,11 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #444444;
+  color: $special_dark-grey;
 }
 
 .additional-goods__button {
-  background: #68b738;
+  background: $basic_green;
   border: none;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -87,7 +87,7 @@
   cursor: pointer;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $basic-green-2;
   }
 
   &:active {

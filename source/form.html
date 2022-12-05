@@ -96,17 +96,18 @@
         <div class="cat-data__form-fields-wrapper">
           <p class="field-group cat-data__form__email">
             <label class="form-label field-text" for="newsletter-email">E-mail:*</label>
-            <input class="field field-email" placeholder="kuklachev@gmail.com" type="email" name="newsletter-email"
+            <input class="field field--email" placeholder="kuklachev@gmail.com" type="email" name="newsletter-email"
               id="newsletter-email" required>
           </p>
           <p class="field-group cat-data__form__email">
             <label class="form-label field-text" for="contact-phone">Телефон:*</label>
-            <input class="field field-phone" placeholder="8 (960) 900-60-90" type="text" name="contact-phone" id="contact-phone"
+            <input class="field field--phone" placeholder="8 (960) 900-60-90" type="text" name="contact-phone" id="contact-phone"
               required>
           </p>
         </div>
         <h2 class="details-title"> Комментарий </h2>
-        <textarea class="comment-form" placeholder="Расскажите обо всех повадках кота" type="text" name="comment-text"
+        <label for="comment-text" class="visually-hidden">Повадки кота</label>
+        <textarea class="comment-form" placeholder="Расскажите обо всех повадках кота" name="comment-text"
           id="comment-text"></textarea>
         <fieldset class="additionally">
           <legend class="details-title details-title--legend"> Дополнительно </legend>
@@ -179,7 +180,7 @@
         </li>
         <li class="main-footer__social-item">
           <a class="main-footer__social-link main-footer__social-link--telegram" href="https://t.me/htmlacademy">
-            <span class="visually-hidden"> Мы вТелеграме </span>
+            <span class="visually-hidden"> Мы в Телеграме </span>
           </a>
         </li>
       </ul>

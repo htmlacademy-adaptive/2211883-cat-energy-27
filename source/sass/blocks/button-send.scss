@@ -1,0 +1,29 @@
+
+.button-send {
+  padding: 0;
+  background: #68b738;
+  width: 280px;
+  min-height: 40px;
+  border: none;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0 20px 21px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: #ffffff30;
+  }
+}

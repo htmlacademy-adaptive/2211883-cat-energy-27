@@ -18,7 +18,7 @@
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
-  color: #444444;
+  color: $special_dark-grey;
   margin: 0;
   text-align: left;
   margin-left: 2px;
@@ -36,10 +36,6 @@
   padding: 26px 20px;
 
   &--gray {
-    background-color: #f2f2f2;
+    background-color: $basic_grey;
   }
-}
-
-.mape-image {
-  margin-bottom: -4px;
 }
