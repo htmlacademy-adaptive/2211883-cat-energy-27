@@ -1,0 +1,41 @@
+.address__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+  color: #000000;
+  margin: 0;
+}
+
+.address__text {
+  font-family: "Lato", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+  color: $special_dark-grey;
+  margin: 0;
+  text-align: left;
+  margin-left: 2px;
+}
+
+.address__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.address__wrapper {
+  padding: 26px 20px;
+
+  &--gray {
+    background-color: $basic_grey;
+  }
+}

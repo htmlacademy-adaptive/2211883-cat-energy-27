@@ -1,0 +1,28 @@
+.comment-form {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+  padding: 9px 12px 0 15px;
+  width: 280px;
+  box-sizing: border-box;
+  min-height: 150px;
+  margin: 0 20px 23px;
+
+  &:hover {
+    border: 1px solid $special_grey;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    border: 2px solid $special_dark-grey;
+  }
+
+  &:disabled {
+    border: 2px solid $status_error;
+  }
+}

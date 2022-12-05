@@ -1,0 +1,19 @@
+.header {
+  background-color: #ffffff;
+  padding: 10px 20px 18px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header__logo {
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

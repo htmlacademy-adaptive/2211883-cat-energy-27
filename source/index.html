@@ -4,19 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/script.js"></script>
 </head>
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo logo">
+    <a class="header__logo logo" href="index.html">
       <img class="header__logo-image" src="img/header/logo-mobile.svg" width="33" height="37" alt=" Логотип компании.">
     </a>
-    <a class="logo-text">
+    <a class="logo-text" href="index.html">
       <img class="logo-text-image" src="img/header/logo-text.svg" width="101" height="18"
         alt="Текстовый логотип компании.">
     </a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+      <button class="main-nav__toggle" type="button" onclick="openMenu(this)">
+        <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -76,7 +79,8 @@
         <h2 class="benefits__title">Как это работает</h2>
         <ul class="benefits__list">
           <li class="benefits__item benefits__item--leaf">
-            <p class="benefits__text">Функциональное питание содержит только полезные питательные вещества.</p>
+            <p class="benefits__text">Функциональное питание <br> содержит только полезные <br> питательные вещества.
+            </p>
           </li>
           <li class="benefits__item benefits__item--powder">
             <p class="benefits__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
@@ -85,7 +89,7 @@
             <p class="benefits__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="benefits__item benefits__item--watch">
-            <p class="benefits__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="benefits__text">Уже через месяц <br> наслаждайтесь изменениями <br> к лучшему вашего питомца!</p>
           </li>
         </ul>
       </div>
@@ -99,44 +103,35 @@
           часов в день. </p>
         <ul class="statistics__list">
           <li class="statistics__item">
-            <h2 class="statistics__title">5 кг</h2>
-            <p class="statistics__text">Снижение веса</p>
+            <h3 class="statistics__title-index">5 кг</h3>
+            <p class="statistics__text-index">cнижение <br> веса</p>
           </li>
           <li class="statistics__item">
-            <h2 class="statistics__title">60 дней</h2>
-            <p class="statistics__text">Затрачено времени</p>
+            <h3 class="statistics__title-index">60 дней</h3>
+            <p class="statistics__text-index">Затрачено <br> времени</p>
           </li>
         </ul>
-      </div>
-    </section>
-
-    <section class="price">
-      <div class="price__wrapper">
-        <h2 class="price__title">Затраты на питание: 15 000 РУБ. </h2>
-      </div>
-    </section>
-
-    <section class="cat-slider">
-      <div class="cat-slider__wrapper">
-        <div class="cat-slider-img">
-          <img src="./img/slider/cat-before.png" width="280" height="256" alt="Толстый кот.">
-        </div>
-        <div class="cat-slider-img cat-slider-overlay">
-          <img src="./img/slider/cat-after.png" width="280" height="256" alt="Худой кот.">
+        <p class="statistics__price">
+          Затраты на питание: 15 000 РУБ.
+        </p>
+        <div class="statistics__slider-wrapper">
+          <img src="./img/slider/cat-slider.png" width="280" height="256" alt="Пример кота до и после приема корма.">
         </div>
       </div>
     </section>
     <section class="address">
+      <h2 class="visually-hidden">Информация для диллеров</h2>
       <div class="address__wrapper">
-        <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="address__text">ул. Большая Конюшенная, д. 19/8Санкт-Петербург</p>
+        <ul class="address__list">
+          <li class="address__item">
+            <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
+          </li>
+          <li class="address__item">
+            <p class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </li>
+        </ul>
       </div>
-    </section>
-    <section class="map">
-      <div class="map__wrapper">
-        <h2 class="visually-hidden">Карта с местом компании</h2>
-        <img class="mape-image" src="img/map/map.png" width="320" height="362" alt="Расположение компнаии на карте">
-      </div>
+      <img class="mape-image" src="img/map/map.png" width="320" height="362" alt="Расположение компнаии на карте">
     </section>
   </main>
   <footer class="main-footer">
@@ -146,17 +141,20 @@
       </a>
       <ul class="main-footer__social-list">
         <li class="main-footer__social-item">
-          <a class="main-footer__social-link main-footer__social-link--vkontakte" href="https://vk.com/htmlacademy">Мы в
-            Вконтакте</a>
+          <a class="main-footer__social-link main-footer__social-link--vkontakte" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Мы в Вконтакте </span>
+          </a>
         </li>
         <li class="main-footer__social-item">
           <a class="main-footer__social-link main-footer__social-link--youtube"
-            href="https://www.youtube.com/user/htmlacademyru">Мы в
-            Ютубе</a>
+            href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden"> Мы в Ютубе </span>
+          </a>
         </li>
-        <li class="main-footer__social-link__social-item">
-          <a class="main-footer__social-link main-footer__social-link--telegram" href="https://t.me/htmlacademy">Мы в
-            Телеграме</a>
+        <li class="main-footer__social-item">
+          <a class="main-footer__social-link main-footer__social-link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden"> Мы в Телеграме </span>
+          </a>
         </li>
       </ul>
       <a class="main-footer__logo-html-academy-link main-footer__logo-html-academy-link--html"
