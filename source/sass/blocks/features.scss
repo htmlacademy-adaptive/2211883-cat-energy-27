@@ -1,9 +1,11 @@
 .features__list {
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
   list-style: none;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .features__title {
@@ -41,7 +43,7 @@
 .features__item {
   background-color: $basic_grey;
   padding: 30px 33px 18px 20px;
-  margin: 0 20px 20px 20px;
+  margin: 0 20px;
 }
 
 .features-card {
@@ -75,4 +77,113 @@
   background-image: url("../img/features/cat-weight-gain.svg");
   background-repeat: no-repeat;
   background-position: 13px 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+
+    margin: 0;
+    margin-left: 1px;
+    margin-bottom: 24px;
+  }
+
+  .features__description {
+    font-family: "Lato", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #000000;
+    width: 340px;
+
+    margin: 0;
+    margin-bottom: 52px;
+  }
+
+  .features__item--weight-loss {
+    background-repeat: no-repeat;
+    background-position: 446px 80px;
+    background-size: 200px 200px;
+  }
+
+  .features__item--weight-gain {
+    background-repeat: no-repeat;
+    background-position: 412px 81px;
+    background-size: 268px 200px;
+  }
+
+  .features__item {
+    margin: 0 30px;
+    padding: 77px 0 53px 52px;
+  }
+
+  .features-card {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .features__list {
+    margin-bottom: 45px;
+    gap: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__list {
+    margin: 0;
+    margin-bottom: 71px;
+    padding: 82px 110px 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .features__item {
+    margin: 0;
+    padding: 77px 61px 55px 52px;
+    width: 570px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+
+    &--weight-loss {
+      background-position: 52px 41px;
+      background-size: 100px 106px;
+    }
+
+    &--weight-gain {
+      background-size: 134px 100px;
+      background-position: 33px 47px;
+    }
+  }
+
+  .features__title {
+    margin: 0;
+    margin-left: 214px;
+    margin-bottom: 73px;
+  }
+
+  .features__description {
+    width: 457px;
+    margin: 0;
+    margin-bottom: 27px;
+  }
 }

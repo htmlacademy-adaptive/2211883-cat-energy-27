@@ -4,3 +4,19 @@
   gap: 13px;
   align-items: center;
 }
+
+@media (min-width: $tablet-width) {
+  .field-group {
+    &--information {
+      gap: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-group {
+    &--information {
+      width: 100%;
+    }
+  }
+}

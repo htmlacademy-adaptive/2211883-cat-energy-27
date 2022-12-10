@@ -89,6 +89,7 @@
   margin: 22px 20px;
 
   &::after {
+    width: 34px;
     content: url("../img/footer/logo-html-academy.svg");
   }
 
@@ -98,5 +99,40 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-footer__wrapper {
+    padding: 58px 30px 55px;
+    background: $basic_grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-footer__social-list {
+    margin: 0;
+    padding: 0;
+    gap: 26px;
+    border-bottom: none;
+  }
+
+  .main-footer__logo-link {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .main-footer__logo-html-academy-link {
+    padding: 0;
+    margin: 0;
+    gap: 23px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer__wrapper {
+    padding: 57px 110px 58px;
   }
 }
