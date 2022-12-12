@@ -39,10 +39,21 @@
 }
 
 .map-image {
+  width: 100%;
   margin-bottom: -4px;
 }
 
-.header {
+@media (min-width: 768px) {
+  .map-image {
+    height: 400px;
+  }
+}
+@media (min-width: 1440px) {
+  .map-image {
+    position: relative;
+  }
+}
+.header__container {
   background-color: #ffffff;
   padding: 10px 20px 18px;
   display: flex;
@@ -65,19 +76,19 @@
     display: none;
   }
 
-  .header {
+  .header__container {
     padding: 25px 29px 0 30px;
   }
 }
 @media (min-width: 1440px) {
-  .header {
+  .header__container {
     padding: 53px 110px 0 110px;
     min-width: 1440px;
     width: 100%;
     box-sizing: border-box;
     background-color: transparent;
   }
-  .header--absolute {
+  .header__container--absolute {
     position: absolute;
   }
 }
@@ -623,6 +634,7 @@
     column-gap: 137px;
     padding-left: 30px;
     padding-bottom: 47px;
+    counter-reset: list;
   }
 
   .benefits__wrapper {
@@ -659,18 +671,8 @@
     line-height: 280px;
     text-align: center;
     color: #f2f2f2;
-  }
-  .benefits__item--leaf::after {
-    content: "1";
-  }
-  .benefits__item--powder::after {
-    content: "2";
-  }
-  .benefits__item--cutlery::after {
-    content: "3";
-  }
-  .benefits__item--watch::after {
-    content: "4";
+    counter-increment: list 1;
+    content: counter(list);
   }
 }
 @media (min-width: 1440px) {
@@ -694,6 +696,22 @@
     margin-bottom: 32px;
   }
 }
+.statistics {
+  z-index: 1;
+  position: relative;
+}
+.statistics::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: #eaeaea;
+  z-index: -1;
+  box-sizing: inherit;
+}
+
 .statistics__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -769,10 +787,6 @@
   right: 0;
   width: max-content;
   max-width: 80px;
-}
-
-.statistics {
-  background-color: #eaeaea;
 }
 
 .statistics__price {
@@ -881,7 +895,6 @@
 
   .statistics__wrapper {
     padding: 43px 0 0;
-    background-color: #ffffff;
   }
 
   .statistics__inner-wrapper {
@@ -890,6 +903,10 @@
     align-items: center;
     padding: 0;
     margin: 0;
+  }
+
+  .statistics::after {
+    height: 43.5%;
   }
 }
 @media (min-width: 1440px) {
@@ -933,7 +950,6 @@
     display: flex;
     justify-content: space-between;
     padding: 70px 110px 75px;
-    background-color: #f2f2f2;
   }
 
   .statistics__wrapper {
@@ -943,7 +959,19 @@
   .statistics__info-wrapper {
     padding: 0;
   }
+
+  .statistics::after {
+    height: 77%;
+    background: #f2f2f2;
+  }
 }
+.address {
+  background-color: transparent;
+}
+.address--gray {
+  background-color: #f2f2f2;
+}
+
 .address__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -980,9 +1008,6 @@
 
 .address__wrapper {
   padding: 26px 20px;
-}
-.address__wrapper--gray {
-  background-color: #f2f2f2;
 }
 
 .address__item {
@@ -1027,17 +1052,10 @@
   .address__wrapper {
     padding: 56px 70px;
   }
-
-  .map-image {
-    width: 768px;
-    height: 400px;
-  }
 }
 @media (min-width: 1440px) {
-  .map-image {
-    width: 100%;
-    height: 400px;
-    position: relative;
+  .address--gray {
+    background-color: transparent;
   }
 
   .address__wrapper {
@@ -1049,6 +1067,10 @@
     background-color: #ffffff;
   }
 }
+.main-footer {
+  background: #f2f2f2;
+}
+
 .main-footer__social-list {
   margin: 0;
   padding: 20px 0 21px;
@@ -1084,7 +1106,6 @@
 
 .main-footer__wrapper {
   padding: 0 20px;
-  background: #f2f2f2;
   display: flex;
   flex-direction: column;
 }
@@ -1137,7 +1158,6 @@
 @media (min-width: 768px) {
   .main-footer__wrapper {
     padding: 58px 30px 55px;
-    background: #f2f2f2;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -2310,7 +2330,6 @@
     position: relative;
     height: 462px;
     padding: 0;
-    background-color: #eaeaea;
   }
 
   .cat-slider__image {
@@ -2333,6 +2352,24 @@
     position: absolute;
     bottom: 15px;
     transform: translateX(-50%);
+  }
+}
+.container {
+  max-width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
   }
 }
 /*# sourceMappingURL=style.css.map */
