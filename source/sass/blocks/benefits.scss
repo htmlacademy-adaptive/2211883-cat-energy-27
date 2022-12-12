@@ -85,6 +85,7 @@
 
     padding-left: 30px;
     padding-bottom: 47px;
+    counter-reset: list;
   }
 
   .benefits__wrapper {
@@ -121,22 +122,8 @@
       line-height: 280px;
       text-align: center;
       color: #f2f2f2;
-    }
-
-    &--leaf::after {
-      content: "1";
-    }
-
-    &--powder::after {
-      content: "2";
-    }
-
-    &--cutlery::after {
-      content: "3";
-    }
-
-    &--watch::after {
-      content: "4";
+      counter-increment: list 1;
+      content: counter(list);
     }
   }
 }

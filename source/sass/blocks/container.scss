@@ -1,0 +1,19 @@
+.container {
+  max-width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    max-width: $tablet-width;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    max-width: $desktop-width;
+  }
+}

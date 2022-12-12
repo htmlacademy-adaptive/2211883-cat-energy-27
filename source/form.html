@@ -10,41 +10,43 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
-    <a class="header__logo logo" href="index.html">
-      <img class="header__logo-image" src="img/header/logo-mobile.svg" width="33" height="37" alt=" Логотип компании.">
-    </a>
-    <a class="logo-text" href="index.html">
-      <img class="logo-text-image" src="img/header/logo-text.svg" width="101" height="18"
-        alt="Текстовый логотип компании.">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" onclick="openMenu(this)"><span class="visually-hidden">Открыть
-          меню</span>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="index.html">
-              Главная
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <header class="header container">
+    <div class="container header__container">
+      <a class="header__logo logo" href="index.html">
+        <img class="header__logo-image" src="img/header/logo-mobile.svg" width="33" height="37" alt=" Логотип компании.">
+      </a>
+      <a class="logo-text" href="index.html">
+        <img class="logo-text-image" src="img/header/logo-text.svg" width="101" height="18"
+          alt="Текстовый логотип компании.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button" onclick="openMenu(this)">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main-form">
-    <section class="cat-data">
+    <section class="cat-data container">
       <h1 class="title-form"> Подбор программы </h1>
       <p class="cat-data__info"> Заполните анкету, и мы подберем программу питания для вашего кота</p>
       <form class="cat-data__form" action="https://echo.htmlacademy.ru/" method="post">
@@ -151,24 +153,26 @@
         </div>
       </form>
     </section>
-    <section class="address">
+    <section class="address address--gray">
       <h2 class="visually-hidden">Информация для диллеров</h2>
-      <div class="address__wrapper address__wrapper--gray">
-        <ul class="address__list">
-          <li class="address__item">
-            <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
-          </li>
-          <li class="address__item address__item--text">
-            <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="address__text">Санкт-Петербург</p>
-          </li>
-        </ul>
+      <div class="container">
+        <div class="address__wrapper">
+          <ul class="address__list">
+            <li class="address__item">
+              <h2 class="address__title">Приглашаем к сотрудничеству дилеров!</h2>
+            </li>
+            <li class="address__item address__item--text">
+              <p class="address__text">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="address__text">Санкт-Петербург</p>
+            </li>
+          </ul>
+        </div>
       </div>
       <img class="map-image" src="img/map/map.png" width="320" height="362" alt="Расположение компнаии на карте">
     </section>
   </main>
   <footer class="main-footer">
-    <div class="main-footer__wrapper">
+    <div class="main-footer__wrapper container">
       <a class=" main-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
         <img class="logo-text-image" src="img/header/logo-text.svg" width="128" height="24" alt="Кэт энерджи.">
       </a>
