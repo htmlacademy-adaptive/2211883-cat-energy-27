@@ -7,3 +7,14 @@
   text-transform: uppercase;
   color: $special_dark-grey-2;
 }
+
+@media (min-width: $tablet-width) {
+  .control-label {
+    font-size: 20px;
+    line-height: 30px;
+
+    &--legend {
+      width: 248px;
+    }
+  }
+}

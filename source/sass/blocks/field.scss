@@ -45,3 +45,13 @@
     background-position: center right 15px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .field {
+    padding: 11px 0 11px 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    height: 52px;
+  }
+}

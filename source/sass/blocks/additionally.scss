@@ -13,3 +13,25 @@
   flex-direction: column;
   gap: 13px;
 }
+
+@media (min-width: $tablet-width) {
+  .additionally__list {
+    margin-left: 70px;
+    margin-bottom: 54px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .additionally {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additionally__list {
+    margin-left: 110px;
+    margin-bottom: 61px;
+    gap: 17px;
+  }
+}

@@ -12,3 +12,29 @@
     margin-bottom: 34px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .details-title {
+    margin: 0 0 76px 69px;
+    max-width: 600px;
+    font-size: 36px;
+    line-height: 36px;
+    color: #000000;
+
+    &--legend {
+      margin-bottom: 57px;
+      margin-left: 70px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .details-title {
+    margin: 0 0 76px 110px;
+
+    &--legend {
+      margin-bottom: 57px;
+      margin-left: 110px;
+    }
+  }
+}

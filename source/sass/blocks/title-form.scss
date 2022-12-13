@@ -9,3 +9,25 @@
   color: #000000;
   margin: 0 20px 37px;
 }
+
+@media (min-width: $tablet-width) {
+  .title-form {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    text-decoration: none;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 54px;
+    margin-left: 69px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title-form {
+    margin-bottom: 56px;
+    margin-left: 110px;
+  }
+}

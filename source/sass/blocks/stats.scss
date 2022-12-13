@@ -50,3 +50,75 @@
     color: #ffffff30;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .stats__wrapper {
+    background-color: #ffffff;
+    background-image: url("../../img/stats/jar-of-chicken-tablet.png");
+    background-size: 709px 609px;
+    background-position: 0 calc(100% - 20px);
+  }
+
+  .stats__description {
+    margin: 0;
+    margin-bottom: 49px;
+
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 119px;
+    color: #000000;
+  }
+
+  .stats__image {
+    display: none;
+  }
+
+  .stats__programm-card {
+    height: 54px;
+    width: 244px;
+    margin-left: 120px;
+    margin-bottom: 526px;
+    box-sizing: border-box;
+
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #ffffff;
+    background: #68b738;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats__description {
+    margin-bottom: 52px;
+    padding: 0;
+    max-width: 414px;
+  }
+
+  .stats__wrapper {
+    min-height: 694px;
+    box-sizing: border-box;
+    padding: 223px 190px 0;
+    background-image: url("../../img/stats/jar-of-chicken-desktop.png");
+    background-size: 552px 499px;
+    background-position: 558px 141px;
+  }
+
+  .stats__programm-card {
+    margin: 0;
+  }
+}

@@ -4,3 +4,9 @@
   gap: 15px;
   position: relative;
 }
+
+@media (min-width: $tablet-width) {
+  .control {
+    gap: 20px;
+  }
+}

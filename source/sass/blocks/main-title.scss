@@ -11,3 +11,25 @@
   padding-left: 20px;
   border-bottom: 1px solid $special_grey-2;
 }
+
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    border: none;
+    padding-left: 30px;
+    padding-bottom: 0;
+    margin-bottom: 163px;
+    margin-top: 63px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-title {
+    padding-left: 110px;
+    margin-bottom: 165px;
+    margin-top: 74px;
+  }
+}

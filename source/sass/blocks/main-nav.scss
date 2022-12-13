@@ -57,3 +57,23 @@
     display: block;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    align-items: flex-end;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: block;
+    position: static;
+  }
+
+  .main-nav__list {
+    display: flex;
+    gap: 34px;
+  }
+}

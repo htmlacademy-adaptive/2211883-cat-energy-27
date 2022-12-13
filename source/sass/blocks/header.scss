@@ -1,4 +1,4 @@
-.header {
+.header__container {
   background-color: #ffffff;
   padding: 10px 20px 18px;
   display: flex;
@@ -15,5 +15,29 @@
 
   &:active {
     opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo {
+    display: none;
+  }
+
+  .header__container {
+    padding: 25px 29px 0 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__container {
+    padding: 53px 110px 0 110px;
+    min-width: 1440px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+
+    &--absolute {
+      position: absolute;
+    }
   }
 }

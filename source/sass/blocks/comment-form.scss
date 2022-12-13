@@ -26,3 +26,22 @@
     border: 2px solid $status_error;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .comment-form {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 19px;
+    min-width: 631px;
+    box-sizing: border-box;
+    min-height: 174px;
+    margin: 0 67px 65px 70px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment-form {
+    min-width: 1220px;
+    margin: 0 110px 67px 110px;
+  }
+}

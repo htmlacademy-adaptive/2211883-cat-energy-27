@@ -8,3 +8,13 @@
   color: $special_dark-grey;
   white-space: nowrap;
 }
+
+@media (min-width: $tablet-width) {
+  .form-label {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

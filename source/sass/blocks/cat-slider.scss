@@ -1,5 +1,37 @@
-.cat-slider__wrapper {
-  margin: 0;
-  padding: 0;
-  background-color: #eaeaea;
+.cat-slider {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .cat-slider {
+    margin-top: 235px;
+    position: relative;
+    height: 462px;
+    padding: 0;
+  }
+
+  .cat-slider__image {
+    width: 560px;
+    height: 512px;
+    position: absolute;
+    bottom: 101px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cat-slider {
+    margin: 0;
+    height: auto;
+    width: auto;
+  }
+
+  .cat-slider__image {
+    width: 560px;
+    height: 512px;
+    position: absolute;
+    bottom: 15px;
+    transform: translateX(-50%);
+  }
 }
