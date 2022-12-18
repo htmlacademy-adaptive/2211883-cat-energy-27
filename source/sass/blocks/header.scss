@@ -40,4 +40,23 @@
       position: absolute;
     }
   }
+
+  .header {
+    &--hero {
+      position: relative;
+
+      &::after {
+        z-index: 0;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        height: 694px;
+        width: 50vw;
+        background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/header/hero-cat-background-desktop.jpg");
+        background-color: rgba(104, 183, 56, 0.85);
+        background-size: cover;
+      }
+    }
+  }
 }

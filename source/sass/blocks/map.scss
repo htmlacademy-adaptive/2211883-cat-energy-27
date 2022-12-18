@@ -1,6 +1,8 @@
 .map-image {
   width: 100%;
   margin-bottom: -4px;
+  display: block;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {

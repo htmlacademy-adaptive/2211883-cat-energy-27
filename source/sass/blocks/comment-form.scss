@@ -7,7 +7,7 @@
   text-transform: uppercase;
   color: $special_dark-grey;
   padding: 9px 12px 0 15px;
-  width: 280px;
+  width: calc(100% - 40px);
   box-sizing: border-box;
   min-height: 150px;
   margin: 0 20px 23px;
@@ -32,7 +32,7 @@
     font-size: 20px;
     line-height: 30px;
     padding: 10px 19px;
-    min-width: 631px;
+    max-width: calc(100% - 137px);
     box-sizing: border-box;
     min-height: 174px;
     margin: 0 67px 65px 70px;
@@ -41,7 +41,7 @@
 
 @media (min-width: $desktop-width) {
   .comment-form {
-    min-width: 1220px;
+    max-width: calc(100% - 220px);
     margin: 0 110px 67px 110px;
   }
 }

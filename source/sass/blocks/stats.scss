@@ -2,7 +2,7 @@
   padding: 26px 20px 20px;
   background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/stats/cat-main-background.png");
   background-repeat: no-repeat, no-repeat;
-  background-size: auto 302px, auto auto;
+  background-size: 100% 302px;
 }
 
 .stats__description {
@@ -20,7 +20,8 @@
 }
 
 .stats__image {
-  margin: 0 0 2px;
+  margin: 0 auto 2px;
+  display: block;
 }
 
 .stats__programm-card {
@@ -54,7 +55,7 @@
 @media (min-width: $tablet-width) {
   .stats__wrapper {
     background-color: #ffffff;
-    background-image: url("../../img/stats/jar-of-chicken-tablet.png");
+    background-image: url("../img/stats/jar-of-chicken-tablet.png");
     background-size: 709px 609px;
     background-position: 0 calc(100% - 20px);
   }
@@ -110,15 +111,20 @@
   }
 
   .stats__wrapper {
-    min-height: 694px;
+    min-height: 595px;
     box-sizing: border-box;
-    padding: 223px 190px 0;
-    background-image: url("../../img/stats/jar-of-chicken-desktop.png");
+    padding: 124px 190px 0;
+    background-image: url("../img/stats/jar-of-chicken-desktop.png");
     background-size: 552px 499px;
-    background-position: 558px 141px;
+    background-position: 558px 52px;
+    background-color: transparent;
   }
 
   .stats__programm-card {
     margin: 0;
+  }
+
+  .stats {
+    background-color: transparent;
   }
 }
