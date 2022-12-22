@@ -15,3 +15,10 @@ function openMenu(button) {
     button.classList.add(menuButtonActiveClass);
   }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const container = document.querySelector('.cat-slider__wrapper');
+  document.querySelector('.cat-slider__input').addEventListener('input', (e) => {
+    container.style.setProperty('--position', `${e.target.value}%`);
+  })
+}, false);

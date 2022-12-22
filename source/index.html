@@ -131,8 +131,32 @@
           </div>
 
           <div class="cat-slider">
-            <img class="cat-slider__image" src="./img/slider/cat-slider.png" width="280" height="256"
-              alt="Пример кота до и после приема корма.">
+            <div class="cat-slider__wrapper">
+              <div class="cat-slider__image-container">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/cat-slider/cat-slider-before-tablet@1x.png 1x, img/cat-slider/cat-slider-before-tablet@2x.png 2x"
+                    width="560" height="512">
+                  <img class="cat-slider__image--before cat-slider__image"
+                    src="img/cat-slider/cat-slider-before-mobile@1x.png"
+                    srcset="img/cat-slider/cat-slider-before-mobile@2x.png 2x" width="280" height="256"
+                    alt="Кот до диеты">
+                </picture>
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/cat-slider/cat-slider-after-tablet@1x.png 1x, img/cat-slider/cat-slider-after-tablet@2x.png 2x"
+                    width="560" height="512">
+                  <img class="cat-slider__image--after cat-slider__image"
+                    src="img/cat-slider/cat-slider-after-mobile@1x.png"
+                    srcset="img/cat-slider/cat-slider-after-mobile@2x.png 2x" width="280" height="256"
+                    alt="Кот после диеты">
+                </picture>
+              </div>
+              <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+                class="cat-slider__input" />
+              <div class="cat-slider__line" aria-hidden="true"></div>
+              <div class="cat-slider__button" aria-hidden="true"></div>
+            </div>
           </div>
         </div>
       </div>

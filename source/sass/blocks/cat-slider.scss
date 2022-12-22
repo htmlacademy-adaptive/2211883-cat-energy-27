@@ -3,6 +3,90 @@
   justify-content: center;
 }
 
+.cat-slider__wrapper {
+  position: relative;
+  --position: 50%;
+  height: max-content;
+}
+
+.cat-slider__image {
+  background-color: #eaeaea;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+  display: block;
+
+  &--before {
+    position: absolute;
+    width: var(--position);
+  }
+}
+
+.cat-slider__image-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cat-slider__input {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0;
+
+  &:hover + .cat-slider__line {
+    background-color: #68b738;
+
+    & + .cat-slider__button {
+      background-image: url("../img/cat-slider/cat-slider-button-hover.svg");
+      border: 2px solid #68b738;
+    }
+  }
+
+  &:active + .cat-slider__line {
+    background: #5eaa2f;
+    opacity: 0.6;
+
+    & + .cat-slider__button {
+      background-image: url("../img/cat-slider/cat-slider-button-active.svg");
+      border: 2px solid #5eaa2f60;
+    }
+  }
+}
+
+.cat-slider__line {
+  position: absolute;
+  inset: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  border-radius: 2px;
+  left: var(--position);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.cat-slider__button {
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: var(--position);
+  transform: translateX(-50%) translateY(-50%);
+  pointer-events: none;
+  border: 2px solid #666666;
+  border-radius: 20px;
+  background-image: url("../img/cat-slider/cat-slider-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
 
 @media (min-width: $tablet-width) {
   .cat-slider {
@@ -12,26 +96,26 @@
     padding: 0;
   }
 
+  .cat-slider__wrapper {
+    bottom: 100px;
+  }
+
   .cat-slider__image {
-    width: 560px;
-    height: 512px;
-    position: absolute;
-    bottom: 101px;
+    background: linear-gradient(to bottom, #ffffff 19.5%, #eaeaea 19.5% 100%);
   }
 }
 
 @media (min-width: $desktop-width) {
   .cat-slider {
     margin: 0;
-    height: auto;
-    width: auto;
+    height: 0;
   }
 
   .cat-slider__image {
-    width: 560px;
-    height: 512px;
-    position: absolute;
-    bottom: 15px;
-    transform: translateX(-50%);
+    background: linear-gradient(to bottom, #ffffff 26.8%, #f2f2f2 26.8% 100%);
+  }
+
+  .cat-slider__wrapper {
+    bottom: 205px;
   }
 }
