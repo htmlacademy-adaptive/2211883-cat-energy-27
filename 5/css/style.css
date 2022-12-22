@@ -108,6 +108,7 @@
     background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/header/hero-cat-background-desktop.jpg");
     background-color: rgba(104, 183, 56, 0.85);
     background-size: cover;
+    background-position: right;
   }
 }
 .page__body {
@@ -209,6 +210,12 @@
   text-transform: uppercase;
   color: #000000;
 }
+.site-list__link:hover {
+  opacity: 0.6;
+}
+.site-list__link:active {
+  opacity: 0.3;
+}
 
 @media (min-width: 768px) {
   .site-list__item {
@@ -301,9 +308,19 @@
 }
 .stats__wrapper {
   padding: 26px 20px 20px;
+}
+.stats__wrapper::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 302px;
+  width: 100%;
   background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/stats/cat-main-background.png");
   background-repeat: no-repeat, no-repeat;
-  background-size: 100% 302px;
+  background-size: contain, cover;
+  background-position: center, center;
 }
 
 .stats__description {
@@ -354,6 +371,10 @@
     background-image: url("../img/stats/jar-of-chicken-tablet.png");
     background-size: 709px 609px;
     background-position: 0 calc(100% - 20px);
+    background-repeat: no-repeat, no-repeat;
+  }
+  .stats__wrapper::before {
+    content: none;
   }
 
   .stats__description {
