@@ -63,15 +63,10 @@
 }
 .header__container {
   background-color: #ffffff;
-  padding: 10px 20px 18px;
   display: flex;
   justify-content: space-between;
   position: relative;
   flex-direction: column;
-}
-.header__container--no-js {
-  padding-bottom: 0;
-  gap: 18px;
 }
 .header__container--no-js .main-nav__wrapper {
   display: block;
@@ -85,6 +80,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 20px 18px;
 }
 
 .header__nav-toggle {
@@ -131,6 +127,10 @@
 }
 
 @media (min-width: 768px) {
+  .header__controls-wrapper {
+    padding: 0;
+  }
+
   .header__logo {
     display: none;
   }
