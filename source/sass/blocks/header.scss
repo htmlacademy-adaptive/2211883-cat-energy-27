@@ -1,15 +1,11 @@
 .header__container {
   background-color: #ffffff;
-  padding: 10px 20px 18px;
   display: flex;
   justify-content: space-between;
   position: relative;
   flex-direction: column;
 
   &--no-js {
-    padding-bottom: 0;
-    gap: 18px;
-
     & .main-nav__wrapper {
       display: block;
       position: static;
@@ -25,6 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 20px 18px;
 }
 
 .header__nav-toggle {
@@ -76,6 +73,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .header__controls-wrapper {
+    padding: 0;
+  }
+
   .header__logo {
     display: none;
   }
