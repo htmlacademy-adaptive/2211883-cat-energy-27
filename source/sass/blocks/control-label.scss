@@ -6,6 +6,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $special_dark-grey-2;
+
+  &--legend {
+    width: 260px;
+  }
 }
 
 @media (min-width: $tablet-width) {

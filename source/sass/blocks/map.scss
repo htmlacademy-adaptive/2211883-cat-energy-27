@@ -1,16 +1,24 @@
 .map-image {
   width: 100%;
-  margin-bottom: -4px;
+  display: block;
+  border: none;
+  height: 362px;
+  background-image: url("../img/map/map-image-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (min-width: $tablet-width) {
   .map-image {
     height: 400px;
+    background-image: url("../img/map/map-image-tablet.jpg");
   }
 }
 
 @media (min-width: $desktop-width) {
   .map-image {
     position: relative;
+    background-image: url("../img/map/map-image-desktop.jpg");
   }
 }

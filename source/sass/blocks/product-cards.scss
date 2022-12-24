@@ -11,13 +11,19 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  text-align: center;
+  text-align: left;
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
   margin: 0;
   margin-bottom: 8px;
+  max-width: 98px;
+
+  &--all {
+    text-align: center;
+    max-width: none;
+  }
 }
 
 .product-cards__table-element {
@@ -36,7 +42,7 @@
 
 .product-cards__button {
   height: 40px;
-  width: 280px;
+  width: 100%;
   padding: 0;
   margin: 0;
   border: none;
@@ -69,7 +75,7 @@
   height: 40px;
   width: 280px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   border: none;
   box-sizing: border-box;
   font-family: "Oswald", "Arial", sans-serif;
@@ -122,16 +128,17 @@
 .product-cards__item-wrapper {
   display: grid;
   grid-auto-flow: column;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
 }
 
 .product-cards__table {
-  width: 140px;
+  width: 100%;
 }
 
 .product-cards__block-info {
+  width: 100%;
   margin-bottom: 9px;
 }
 
@@ -209,7 +216,11 @@
     text-transform: uppercase;
     color: #000000;
     margin: 0 auto 21px;
-    width: 150px;
+    max-width: 150px;
+
+    &--all {
+      max-width: 150px;
+    }
   }
 
   .product-cards__table-element {
