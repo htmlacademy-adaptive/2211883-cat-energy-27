@@ -215,7 +215,7 @@
 
   .statistics {
     &::after {
-      height: 43.5%;
+      height: 462px;
     }
   }
 }
@@ -262,6 +262,27 @@
     display: flex;
     justify-content: space-between;
     padding: 70px 110px 75px;
+    background: #f2f2f2;
+    position: relative;
+
+    &::after,
+    &::before {
+      content: "";
+      background: #f2f2f2;
+      position: absolute;
+      z-index: -2;
+      top: 0;
+      height: 100%;
+      width: 1000vh;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
   }
 
   .statistics__wrapper {
@@ -274,8 +295,7 @@
 
   .statistics {
     &::after {
-      height: 77%;
-      background: #f2f2f2;
+      content: none;
     }
   }
 
