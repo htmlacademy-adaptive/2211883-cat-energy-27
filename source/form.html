@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="./js/script.js"></script>
 </head>
 
@@ -18,8 +22,12 @@
             alt=" Логотип компании.">
         </a>
         <a class="logo-text" href="index.html">
-          <img class="logo-text-image" src="img/header/logo-text.svg" width="101" height="18"
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header/logo-text-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/header/logo-text-tablet.svg" width="174" height="52">
+            <img class="logo-text-image" src="img/header/logo-text-mobile.svg" width="101" height="18"
             alt="Текстовый логотип компании.">
+          </picture>
         </a>
         <button class="header__nav-toggle" type="button" onclick="openMenu(this)">
           <span class="visually-hidden">Открыть меню</span>
@@ -180,7 +188,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper container">
       <a class=" main-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="logo-text-image" src="img/header/logo-text.svg" width="128" height="24" alt="Кэт энерджи.">
+        <img class="logo-text-image" src="img/footer/footer-logo.svg" width="128" height="24" alt="Кэт энерджи.">
       </a>
       <ul class="main-footer__social-list">
         <li class="main-footer__social-item">

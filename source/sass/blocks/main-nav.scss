@@ -24,7 +24,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    align-items: flex-end;
+    padding-top: 18px;
   }
 
   .main-nav__wrapper {
@@ -35,5 +35,11 @@
   .main-nav__list {
     display: flex;
     gap: 34px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    padding-top: 16px;
   }
 }

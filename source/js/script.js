@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function initCatSlider() {
   const container = document.querySelector('.cat-slider__wrapper');
-  document.querySelector('.cat-slider__input').addEventListener('input', (e) => {
+  document.querySelector('.cat-slider__input')?.addEventListener('input', (e) => {
     container.style.setProperty('--position', `${e.target.value}%`);
   })
 }

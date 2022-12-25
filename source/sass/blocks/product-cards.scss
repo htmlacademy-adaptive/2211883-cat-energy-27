@@ -178,7 +178,7 @@
   .product-cards__image {
     position: absolute;
     top: 127px;
-    transform: translateY(-100%);
+    transform: translateY(-100%) translateX(-50%);
   }
 
   .product-cards__item {
