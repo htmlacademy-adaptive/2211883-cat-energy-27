@@ -175,10 +175,21 @@
     background-image: linear-gradient(to top, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/header/hero-cat-background-desktop@2x.jpg");
   }
 }
+.page {
+  height: 100%;
+}
+
 .page__body {
   width: 100%;
   margin: 0;
   padding: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.page__main {
+  flex-grow: 1;
 }
 
 .main-nav {
