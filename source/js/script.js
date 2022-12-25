@@ -16,7 +16,17 @@ function openMenu(button) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function () {
+}, false);
+
+function initCatSlider() {
+  const container = document.querySelector('.cat-slider__wrapper');
+  document.querySelector('.cat-slider__input')?.addEventListener('input', (e) => {
+    container.style.setProperty('--position', `${e.target.value}%`);
+  })
+}
+
+function initHeadContainer() {
   let headerContainer = document.querySelectorAll('.header__container');
   headerContainer = headerContainer.length === 0 ? false : headerContainer[0];
   let headerContainerNoJsClass = 'header__container--no-js';
@@ -24,4 +34,9 @@ document.addEventListener("DOMContentLoaded", function() {
   if(headerContainer && headerContainer.classList.contains(headerContainerNoJsClass)) {
     headerContainer.classList.remove(headerContainerNoJsClass);
   }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  initCatSlider();
+  initHeadContainer();
 });

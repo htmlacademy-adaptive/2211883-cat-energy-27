@@ -7,12 +7,20 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map/map-image-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: $tablet-width) {
   .map-image {
     height: 400px;
     background-image: url("../img/map/map-image-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map/map-image-tablet@2x.jpg");
+    }
   }
 }
 
@@ -20,5 +28,9 @@
   .map-image {
     position: relative;
     background-image: url("../img/map/map-image-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map/map-image-desktop@2x.jpg");
+    }
   }
 }

@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" crossorigin="use-credentials" href="manifest.webmanifest">
   <script src="./js/script.js"></script>
 </head>
 
@@ -18,8 +22,12 @@
             alt=" Логотип компании.">
         </a>
         <a class="logo-text" href="index.html">
-          <img class="logo-text-image" src="img/header/logo-text.svg" width="101" height="18"
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header/logo-text-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/header/logo-text-tablet.svg" width="174" height="52">
+            <img class="logo-text-image" src="img/header/logo-text-mobile.svg" width="101" height="18"
             alt="Текстовый логотип компании.">
+          </picture>
         </a>
         <button class="header__nav-toggle" type="button" onclick="openMenu(this)">
           <span class="visually-hidden">Открыть меню</span>
@@ -48,13 +56,14 @@
       </nav>
     </div>
   </header>
-  <main class="main-container">
+  <main class="page__main">
     <div class="container">
       <section class="stats">
         <div class="stats__wrapper">
           <h1 class=" title title--home">Функциональное питание для котов</h1>
           <p class="stats__description">Занялся собой? Займись котом!</p>
           <img class="stats__image" src="img/stats/jar-of-chicken.png" width="280" height="270"
+            srcset="img/stats/jar-of-chicken@2x.png 2x"
             alt="Корм со вкусом курицы.">
           <a class="stats__programm-card" href="form.html"> Подобрать программу
           </a>
@@ -133,8 +142,32 @@
           </div>
 
           <div class="cat-slider">
-            <img class="cat-slider__image" src="./img/slider/cat-slider.png" width="280" height="256"
-              alt="Пример кота до и после приема корма.">
+            <div class="cat-slider__wrapper">
+              <div class="cat-slider__image-container">
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/cat-slider/cat-slider-before-tablet@1x.png 1x, img/cat-slider/cat-slider-before-tablet@2x.png 2x"
+                    width="560" height="512">
+                  <img class="cat-slider__image--before cat-slider__image"
+                    src="img/cat-slider/cat-slider-before-mobile@1x.png"
+                    srcset="img/cat-slider/cat-slider-before-mobile@2x.png 2x" width="280" height="256"
+                    alt="Кот до диеты">
+                </picture>
+                <picture>
+                  <source media="(min-width: 768px)"
+                    srcset="img/cat-slider/cat-slider-after-tablet@1x.png 1x, img/cat-slider/cat-slider-after-tablet@2x.png 2x"
+                    width="560" height="512">
+                  <img class="cat-slider__image--after cat-slider__image"
+                    src="img/cat-slider/cat-slider-after-mobile@1x.png"
+                    srcset="img/cat-slider/cat-slider-after-mobile@2x.png 2x" width="280" height="256"
+                    alt="Кот после диеты">
+                </picture>
+              </div>
+              <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
+                class="cat-slider__input" />
+              <div class="cat-slider__line" aria-hidden="true"></div>
+              <div class="cat-slider__button" aria-hidden="true"></div>
+            </div>
           </div>
         </div>
       </div>
@@ -164,7 +197,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper container">
       <a class=" main-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="logo-text-image" src="img/header/logo-text.svg" width="128" height="24" alt="Кэт энерджи.">
+        <img class="logo-text-image" src="img/footer/footer-logo.svg" width="128" height="24" alt="Кэт энерджи.">
       </a>
       <ul class="main-footer__social-list">
         <li class="main-footer__social-item">

@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" crossorigin="use-credentials" href="manifest.webmanifest">
   <script src="./js/script.js"></script>
 </head>
 
@@ -18,8 +22,12 @@
             alt=" Логотип компании.">
         </a>
         <a class="logo-text" href="index.html">
-          <img class="logo-text-image" src="img/header/logo-text.svg" width="101" height="18"
-            alt="Текстовый логотип компании.">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/header/logo-text-desktop.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/header/logo-text-tablet.svg" width="174" height="52">
+            <img class="logo-text-image" src="img/header/logo-text-mobile.svg" width="101" height="18"
+              alt="Текстовый логотип компании.">
+          </picture>
         </a>
         <button class="header__nav-toggle" type="button" onclick="openMenu(this)">
           <span class="visually-hidden">Открыть меню</span>
@@ -48,7 +56,7 @@
       </nav>
     </div>
   </header>
-  <main class="main-catalog">
+  <main class="page__main">
     <div class="container">
       <h1 class="main-title"> Каталог продукции </h1>
       <section class="product-cards">
@@ -56,8 +64,15 @@
           <ul class="product-cards__list">
             <li class="product-cards__item">
               <div class="product-cards__item-wrapper">
-                <img class="product-cards__image" src="img/product-cards/small-chicken-feed.png" width="68" height="86"
-                  alt="Куриный корм 500гр.">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/product-cards/small-chicken-feed-desktop.png 1x, img/product-cards/small-chicken-feed-desktop@2x.png 2x"
+                    width="161" height="172">
+                  <source media="(min-width: 768px)" srcset="img/product-cards/small-chicken-feed-tablet.png 1x, img/product-cards/small-chicken-feed-tablet@2x.png 2x"
+                    width="161" height="172">
+                  <img class="product-cards__image" src="img/product-cards/small-chicken-feed.png" width="68"
+                    height="86" srcset="img/product-cards/small-chicken-feed@2x.png 2x"
+                    alt="Куриный корм 500гр.">
+                </picture>
 
                 <div class="product-cards__block-info">
                   <h2 class="product-cards__title"> Cat Energy PRO 500 г </h2>
@@ -83,8 +98,15 @@
             <li class="product-cards__item">
 
               <div class="product-cards__item-wrapper">
-                <img class="product-cards__image" src="img/product-cards/big-chicken-feed.png" width="84" height="100"
-                  alt="Куриный корм 1000гр.">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/product-cards/big-chicken-feed-desktop.png 1x, img/product-cards/big-chicken-feed-desktop@2x.png 2x"
+                    width="172" height="196">
+                  <source media="(min-width: 768px)" srcset="img/product-cards/big-chicken-feed-tablet.png 1x, img/product-cards/big-chicken-feed-tablet@2x.png 2x" width="168"
+                    height="206">
+                  <img class="product-cards__image" src="img/product-cards/big-chicken-feed.png" width="84" height="100"
+                    srcset="img/product-cards/big-chicken-feed@2x.png 2x"
+                    alt="Куриный корм 1000гр.">
+                </picture>
 
                 <div class="product-cards__block-info">
                   <h2 class="product-cards__title"> Cat Energy PRO 1000 г</h2>
@@ -109,8 +131,15 @@
             <li class="product-cards__item">
 
               <div class="product-cards__item-wrapper">
-                <img class="product-cards__image" src="img/product-cards/small-fish-food.png" width="68" height="78"
-                  alt="Корм с курицей 500гр.">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/product-cards/small-fish-food-desktop.png 1x, img/product-cards/small-fish-food-desktop@2x.png 2x" width="163"
+                    height="174">
+                  <source media="(min-width: 768px)" srcset="img/product-cards/small-fish-food-tablet.png 1x, img/product-cards/small-fish-food-tablet@2x.png 2x" width="163"
+                    height="174">
+                  <img class="product-cards__image" src="img/product-cards/small-fish-food.png" width="68" height="78"
+                    srcset="img/product-cards/small-fish-food@2x.png 2x"
+                    alt="Корм с курицей 500гр.">
+                </picture>
 
                 <div class="product-cards__block-info">
                   <h2 class="product-cards__title"> Cat Energy PRO 500 г</h2>
@@ -136,8 +165,15 @@
             <li class="product-cards__item">
 
               <div class="product-cards__item-wrapper">
-                <img class="product-cards__image" src="img/product-cards/big-fish-food.png" width="84" height="100"
-                  alt="Корм с рыбой 1000гр.">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/product-cards/big-fish-food-desktop.png 1x, img/product-cards/big-fish-food-desktop@2x.png 2x" width="172"
+                    height="196">
+                  <source media="(min-width: 768px)" srcset="img/product-cards/big-fish-food-tablet.png 1x, img/product-cards/big-fish-food-tablet@2x.png 2x" width="168"
+                    height="200">
+                  <img class="product-cards__image" src="img/product-cards/big-fish-food.png" width="84" height="100"
+                    srcset="img/product-cards/big-fish-food@2x.png 2x"
+                    alt="Корм с рыбой 1000гр.">
+                </picture>
 
                 <div class="product-cards__block-info">
                   <h2 class="product-cards__title"> Cat Energy PRO 1000 г</h2>
@@ -163,8 +199,16 @@
             <li class="product-cards__item">
 
               <div class="product-cards__item-wrapper">
-                <img class="product-cards__image" src="img/product-cards/small-food-with-buckwheat.png" width="68"
-                  height="78" alt="Корм с гречкой 500гр.">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/product-cards/small-food-with-buckwheat-desktop.png 1x, img/product-cards/small-food-with-buckwheat-desktop@2x.png 2x"
+                    width="161" height="171">
+                  <source media="(min-width: 768px)" srcset="img/product-cards/small-food-with-buckwheat-tablet.png 1x, img/product-cards/small-food-with-buckwheat-tablet@2x.png 2x"
+                    width="161" height="171">
+                  <img class="product-cards__image" src="img/product-cards/small-food-with-buckwheat.png" width="68"
+                    height="78"
+                    srcset="img/product-cards/small-food-with-buckwheat@2x.png 2x"
+                    alt="Корм с гречкой 500гр.">
+                </picture>
                 <div class="product-cards__block-info">
                   <h2 class="product-cards__title"> Cat Energy slim 500 г</h2>
                   <table class="product-cards__table">
@@ -189,8 +233,16 @@
             <li class="product-cards__item">
 
               <div class="product-cards__item-wrapper">
-                <img class="product-cards__image" src="img/product-cards/small-food-with-buckwheat.png" width="84"
-                  height="100" alt="Корм с гречкой 1000гр.">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/product-cards/big-food-with-buckwheat-desktop.png 1x, img/product-cards/big-food-with-buckwheat-desktop@2x.png 2x"
+                    width="172" height="196">
+                  <source media="(min-width: 768px)" srcset="img/product-cards/big-food-with-buckwheat-tablet.png 1x, img/product-cards/big-food-with-buckwheat-tablet@2x.png 2x"
+                    width="168" height="200">
+                  <img class="product-cards__image" src="img/product-cards/big-food-with-buckwheat.png" width="84"
+                    height="100"
+                    srcset="img/product-cards/big-food-with-buckwheat@2x.png 2x"
+                    alt="Корм с гречкой 1000гр.">
+                </picture>
                 <div class="product-cards__block-info">
                   <h2 class="product-cards__title"> Cat Energy slim 1000 г</h2>
                   <table class="product-cards__table">
@@ -214,8 +266,16 @@
             </li>
             <li class="product-cards__item">
               <div class="product-cards__item-wrapper">
-                <img class="product-cards__image" src="img/product-cards/small-food-with-rice.png" width="72" height="84"
-                  alt="Корм с рисом 500гр.">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/product-cards/small-food-with-rice-desktop.png 1x, img/product-cards/small-food-with-rice-desktop@2x.png 2x"
+                    width="163" height="174">
+                  <source media="(min-width: 768px)" srcset="img/product-cards/small-food-with-rice-tablet.png 1x, img/product-cards/small-food-with-rice-tablet@2x.png 2x"
+                    width="163" height="174">
+                  <img class="product-cards__image" src="img/product-cards/small-food-with-rice.png" width="72"
+                    height="84"
+                    srcset="img/product-cards/small-food-with-rice@2x.png 2x"
+                    alt="Корм с рисом 500гр.">
+                </picture>
 
                 <div class="product-cards__block-info">
                   <h2 class="product-cards__title"> Cat Energy slim 500 г</h2>
@@ -345,7 +405,7 @@
   <footer class="main-footer">
     <div class="main-footer__wrapper container">
       <a class=" main-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive">
-        <img class="logo-text-image" src="img/header/logo-text.svg" width="128" height="24" alt="Кэт энерджи.">
+        <img class="logo-text-image" src="img/footer/footer-logo.svg" width="128" height="24" alt="Кэт энерджи.">
       </a>
       <ul class="main-footer__social-list">
         <li class="main-footer__social-item">
@@ -369,8 +429,6 @@
         href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
     </div>
   </footer>
-
-
 </body>
 
 </html>
