@@ -190,6 +190,7 @@
 
 .page__main {
   flex-grow: 1;
+  overflow: hidden;
 }
 
 .main-nav {
@@ -2656,12 +2657,5 @@
   .container {
     max-width: 1440px;
   }
-}
-.main-catalog {
-  overflow: hidden;
-}
-
-.main-form {
-  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
