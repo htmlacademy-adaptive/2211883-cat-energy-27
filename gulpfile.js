@@ -4,6 +4,7 @@ import sass from 'gulp-dart-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import { stacksvg } from "gulp-stacksvg"
 
 // Styles
 
@@ -43,3 +44,13 @@ const watcher = () => {
 export default gulp.series(
   styles, server, watcher
 );
+
+const { src, dest } = gulp
+
+function makeStack () {
+	return src(`source/img/**/*.svg`)
+		.pipe(stacksvg({ output: `sprite` }))
+		.pipe(dest(`source/img`))
+}
+
+makeStack();

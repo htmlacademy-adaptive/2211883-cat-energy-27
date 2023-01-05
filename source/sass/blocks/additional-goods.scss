@@ -130,7 +130,10 @@
   background-position: center;
 
   &::before {
-    content: url("../img/additional-goods/icon_gift.svg");
+    content: "";
+    background-image: url("../img/sprite.svg#additional-goods_icon_gift");
+    width: 78px;
+    height: 80px;
     position: absolute;
     top: 58px;
     left: 50%;
@@ -223,7 +226,7 @@
       content: "";
       width: 80px;
       height: 83px;
-      background-image: url("../img/additional-goods/icon_gift.svg");
+      background-image: url("../img/sprite.svg#additional-goods/icon_gift");
       background-size: cover;
 
       position: absolute;
@@ -299,7 +302,7 @@
       content: "";
       width: 80px;
       height: 83px;
-      background-image: url("../img/additional-goods/icon_gift.svg");
+      background-image: url("../img/sprite.svg#additional-goods_icon_gift");
       background-size: cover;
 
       position: absolute;

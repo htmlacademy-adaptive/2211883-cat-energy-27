@@ -14,37 +14,13 @@
 }
 
 .main-footer__social-link {
-  &--vkontakte {
-    &::after {
-      content: url("../img/footer/vkontakte.svg");
-    }
+  --fill: #666666;
 
-    &:hover::after {
-      content: url("../img/footer/vkontakte-green.svg");
-    }
+  &:hover {
+    --fill: #68b738;
   }
 
-  &--youtube {
-    &::after {
-      content: url("../img/footer/youtube.svg");
-    }
-
-    &:hover::after {
-      content: url("../img/footer/youtube-green.svg");
-    }
-  }
-
-  &--telegram {
-    &::after {
-      content: url("../img/footer/telegram.svg");
-    }
-
-    &:hover::after {
-      content: url("../img/footer/telegram-green.svg");
-    }
-  }
-
-  &:active::after {
+  &:active {
     opacity: 0.3;
   }
 }
@@ -90,14 +66,10 @@
   align-items: center;
   justify-content: space-between;
   margin: 22px 20px;
+  --fill: #666666;
 
-  &::after {
-    width: 34px;
-    content: url("../img/footer/logo-html-academy.svg");
-  }
-
-  &:hover::after {
-    content: url("../img/footer/logo-html-academy-green.svg");
+  &:hover {
+    --fill: #68b738;
   }
 
   &:active {
