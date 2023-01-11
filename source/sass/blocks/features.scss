@@ -34,16 +34,24 @@
   margin-bottom: 38px;
 }
 
-.features__item--weight-loss {
-  background-image: url("../img/features/cat-weight-loss.svg");
-  background-repeat: no-repeat;
-  background-position: 21px 22px;
-}
-
 .features__item {
   background-color: $basic_grey;
   padding: 30px 33px 18px 20px;
   margin: 0 20px;
+
+  &--weight-loss {
+    background-image: url("../img/sprite.svg#features_cat-weight-loss");
+    background-repeat: no-repeat;
+    background-position: 21px 22px;
+    background-size: 50px 53px;
+  }
+
+  &--weight-gain {
+    background-image: url("../img/sprite.svg#features_cat-weight-gain");
+    background-repeat: no-repeat;
+    background-position: 13px 24px;
+    background-size: 67px 50px;
+  }
 }
 
 .features-card {
@@ -71,12 +79,6 @@
   &:active {
     opacity: 0.3;
   }
-}
-
-.features__item--weight-gain {
-  background-image: url("../img/features/cat-weight-gain.svg");
-  background-repeat: no-repeat;
-  background-position: 13px 24px;
 }
 
 @media (min-width: $tablet-width) {

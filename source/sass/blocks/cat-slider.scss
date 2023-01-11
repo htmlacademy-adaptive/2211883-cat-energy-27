@@ -43,7 +43,7 @@
     background-color: #68b738;
 
     & + .cat-slider__button {
-      background-image: url("../img/cat-slider/cat-slider-button-hover.svg");
+      background-image: url("../img/sprite.svg#cat-slider_cat-slider-button-hover");
       border: 2px solid #68b738;
     }
   }
@@ -53,7 +53,7 @@
     opacity: 0.6;
 
     & + .cat-slider__button {
-      background-image: url("../img/cat-slider/cat-slider-button-active.svg");
+      background-image: url("../img/sprite.svg#cat-slider_cat-slider-button-active");
       border: 2px solid #5eaa2f60;
     }
   }
@@ -82,7 +82,8 @@
   pointer-events: none;
   border: 2px solid #666666;
   border-radius: 20px;
-  background-image: url("../img/cat-slider/cat-slider-button.svg");
+  background-image: url("../img/sprite.svg#cat-slider_cat-slider-button");
+  background-size: 24px 18px;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ffffff;
@@ -112,7 +113,7 @@
   }
 
   .cat-slider__image {
-    background: linear-gradient(to bottom, #ffffff 26.8%, #f2f2f2 26.8% 100%);
+    background: linear-gradient(to bottom, #ffffff 26%, #f2f2f2 27% 100%);
   }
 
   .cat-slider__wrapper {

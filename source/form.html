@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" crossorigin="use-credentials" href="manifest.webmanifest">
-  <script src="./js/script.js"></script>
+  <script src="./js/scripts.min.js"></script>
 </head>
 
 <body class="page__body">
@@ -23,8 +23,8 @@
         </a>
         <a class="logo-text" href="index.html">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/header/logo-text-desktop.svg" width="202" height="59">
-            <source media="(min-width: 768px)" srcset="img/header/logo-text-tablet.svg" width="174" height="52">
+            <source media="(min-width: 1440px)" srcset="img/header/logo-text-adaptive.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/header/logo-text-adaptive.svg" width="174" height="52">
             <img class="logo-text-image" src="img/header/logo-text-mobile.svg" width="101" height="18"
             alt="Текстовый логотип компании.">
           </picture>
@@ -192,24 +192,37 @@
       </a>
       <ul class="main-footer__social-list">
         <li class="main-footer__social-item">
-          <a class="main-footer__social-link main-footer__social-link--vkontakte" href="https://vk.com/htmlacademy">
+          <a class="main-footer__social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Мы в Вконтакте </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22">
+              <use href="img/sprite.svg#footer_vkontakte" />
+            </svg>
           </a>
         </li>
         <li class="main-footer__social-item">
-          <a class="main-footer__social-link main-footer__social-link--youtube"
+          <a class="main-footer__social-link"
             href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden"> Мы в Ютубе </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22">
+              <use href="img/sprite.svg#footer_youtube" />
+            </svg>
           </a>
         </li>
         <li class="main-footer__social-item">
-          <a class="main-footer__social-link main-footer__social-link--telegram" href="https://t.me/htmlacademy">
+          <a class="main-footer__social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden"> Мы в Телеграме </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22">
+              <use href="img/sprite.svg#footer_telegram" />
+            </svg>
           </a>
         </li>
       </ul>
-      <a class="main-footer__logo-html-academy-link main-footer__logo-html-academy-link--html"
-        href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="main-footer__logo-html-academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span>HTML Academy</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34">
+          <use href="img/sprite.svg#footer_logo-html-academy"/>
+        </svg>
+      </a>
     </div>
   </footer>
 </body>

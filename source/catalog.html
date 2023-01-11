@@ -5,12 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" crossorigin="use-credentials" href="manifest.webmanifest">
-  <script src="./js/script.js"></script>
+  <script src="./js/scripts.min.js"></script>
 </head>
 
 <body class="page__body">
@@ -23,8 +23,8 @@
         </a>
         <a class="logo-text" href="index.html">
           <picture>
-            <source media="(min-width: 1440px)" srcset="img/header/logo-text-desktop.svg" width="202" height="59">
-            <source media="(min-width: 768px)" srcset="img/header/logo-text-tablet.svg" width="174" height="52">
+            <source media="(min-width: 1440px)" srcset="img/header/logo-text-adaptive.svg" width="202" height="59">
+            <source media="(min-width: 768px)" srcset="img/header/logo-text-adaptive.svg" width="174" height="52">
             <img class="logo-text-image" src="img/header/logo-text-mobile.svg" width="101" height="18"
               alt="Текстовый логотип компании.">
           </picture>
@@ -65,13 +65,14 @@
             <li class="product-cards__item">
               <div class="product-cards__item-wrapper">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/product-cards/small-chicken-feed-desktop.png 1x, img/product-cards/small-chicken-feed-desktop@2x.png 2x"
+                  <source media="(min-width: 1440px)"
+                    srcset="img/product-cards/small-chicken-feed-desktop.png 1x, img/product-cards/small-chicken-feed-desktop@2x.png 2x"
                     width="161" height="172">
-                  <source media="(min-width: 768px)" srcset="img/product-cards/small-chicken-feed-tablet.png 1x, img/product-cards/small-chicken-feed-tablet@2x.png 2x"
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-cards/small-chicken-feed-tablet.png 1x, img/product-cards/small-chicken-feed-tablet@2x.png 2x"
                     width="161" height="172">
                   <img class="product-cards__image" src="img/product-cards/small-chicken-feed.png" width="68"
-                    height="86" srcset="img/product-cards/small-chicken-feed@2x.png 2x"
-                    alt="Куриный корм 500гр.">
+                    height="86" srcset="img/product-cards/small-chicken-feed@2x.png 2x" alt="Куриный корм 500гр.">
                 </picture>
 
                 <div class="product-cards__block-info">
@@ -99,13 +100,22 @@
 
               <div class="product-cards__item-wrapper">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/product-cards/big-chicken-feed-desktop.png 1x, img/product-cards/big-chicken-feed-desktop@2x.png 2x"
+                  <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="img/product-cards/big-chicken-feed-desktop.webp 1x, img/product-cards/big-chicken-feed-desktop@2x.webp 2x"
                     width="172" height="196">
-                  <source media="(min-width: 768px)" srcset="img/product-cards/big-chicken-feed-tablet.png 1x, img/product-cards/big-chicken-feed-tablet@2x.png 2x" width="168"
-                    height="206">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/product-cards/big-chicken-feed-tablet.webp 1x, img/product-cards/big-chicken-feed-tablet@2x.webp 2x"
+                    width="168" height="206">
+                  <source type="image/webp" width="84" height="100"
+                    srcset="img/product-cards/big-chicken-feed.webp 1x, img/product-cards/big-chicken-feed@2x.webp 2x ">
+                  <source media="(min-width: 1440px)"
+                    srcset="img/product-cards/big-chicken-feed-desktop.png 1x, img/product-cards/big-chicken-feed-desktop@2x.png 2x"
+                    width="172" height="196">
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-cards/big-chicken-feed-tablet.png 1x, img/product-cards/big-chicken-feed-tablet@2x.png 2x"
+                    width="168" height="206">
                   <img class="product-cards__image" src="img/product-cards/big-chicken-feed.png" width="84" height="100"
-                    srcset="img/product-cards/big-chicken-feed@2x.png 2x"
-                    alt="Куриный корм 1000гр.">
+                    srcset="img/product-cards/big-chicken-feed@2x.png 2x" alt="Куриный корм 1000гр.">
                 </picture>
 
                 <div class="product-cards__block-info">
@@ -132,13 +142,14 @@
 
               <div class="product-cards__item-wrapper">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/product-cards/small-fish-food-desktop.png 1x, img/product-cards/small-fish-food-desktop@2x.png 2x" width="163"
-                    height="174">
-                  <source media="(min-width: 768px)" srcset="img/product-cards/small-fish-food-tablet.png 1x, img/product-cards/small-fish-food-tablet@2x.png 2x" width="163"
-                    height="174">
+                  <source media="(min-width: 1440px)"
+                    srcset="img/product-cards/small-fish-food-desktop.png 1x, img/product-cards/small-fish-food-desktop@2x.png 2x"
+                    width="163" height="174">
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-cards/small-fish-food-tablet.png 1x, img/product-cards/small-fish-food-tablet@2x.png 2x"
+                    width="163" height="174">
                   <img class="product-cards__image" src="img/product-cards/small-fish-food.png" width="68" height="78"
-                    srcset="img/product-cards/small-fish-food@2x.png 2x"
-                    alt="Корм с курицей 500гр.">
+                    srcset="img/product-cards/small-fish-food@2x.png 2x" alt="Корм с курицей 500гр.">
                 </picture>
 
                 <div class="product-cards__block-info">
@@ -166,13 +177,14 @@
 
               <div class="product-cards__item-wrapper">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/product-cards/big-fish-food-desktop.png 1x, img/product-cards/big-fish-food-desktop@2x.png 2x" width="172"
-                    height="196">
-                  <source media="(min-width: 768px)" srcset="img/product-cards/big-fish-food-tablet.png 1x, img/product-cards/big-fish-food-tablet@2x.png 2x" width="168"
-                    height="200">
+                  <source media="(min-width: 1440px)"
+                    srcset="img/product-cards/big-fish-food-desktop.png 1x, img/product-cards/big-fish-food-desktop@2x.png 2x"
+                    width="172" height="196">
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-cards/big-fish-food-tablet.png 1x, img/product-cards/big-fish-food-tablet@2x.png 2x"
+                    width="168" height="200">
                   <img class="product-cards__image" src="img/product-cards/big-fish-food.png" width="84" height="100"
-                    srcset="img/product-cards/big-fish-food@2x.png 2x"
-                    alt="Корм с рыбой 1000гр.">
+                    srcset="img/product-cards/big-fish-food@2x.png 2x" alt="Корм с рыбой 1000гр.">
                 </picture>
 
                 <div class="product-cards__block-info">
@@ -200,13 +212,14 @@
 
               <div class="product-cards__item-wrapper">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/product-cards/small-food-with-buckwheat-desktop.png 1x, img/product-cards/small-food-with-buckwheat-desktop@2x.png 2x"
+                  <source media="(min-width: 1440px)"
+                    srcset="img/product-cards/small-food-with-buckwheat-desktop.png 1x, img/product-cards/small-food-with-buckwheat-desktop@2x.png 2x"
                     width="161" height="171">
-                  <source media="(min-width: 768px)" srcset="img/product-cards/small-food-with-buckwheat-tablet.png 1x, img/product-cards/small-food-with-buckwheat-tablet@2x.png 2x"
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-cards/small-food-with-buckwheat-tablet.png 1x, img/product-cards/small-food-with-buckwheat-tablet@2x.png 2x"
                     width="161" height="171">
                   <img class="product-cards__image" src="img/product-cards/small-food-with-buckwheat.png" width="68"
-                    height="78"
-                    srcset="img/product-cards/small-food-with-buckwheat@2x.png 2x"
+                    height="78" srcset="img/product-cards/small-food-with-buckwheat@2x.png 2x"
                     alt="Корм с гречкой 500гр.">
                 </picture>
                 <div class="product-cards__block-info">
@@ -234,13 +247,14 @@
 
               <div class="product-cards__item-wrapper">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/product-cards/big-food-with-buckwheat-desktop.png 1x, img/product-cards/big-food-with-buckwheat-desktop@2x.png 2x"
+                  <source media="(min-width: 1440px)"
+                    srcset="img/product-cards/big-food-with-buckwheat-desktop.png 1x, img/product-cards/big-food-with-buckwheat-desktop@2x.png 2x"
                     width="172" height="196">
-                  <source media="(min-width: 768px)" srcset="img/product-cards/big-food-with-buckwheat-tablet.png 1x, img/product-cards/big-food-with-buckwheat-tablet@2x.png 2x"
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-cards/big-food-with-buckwheat-tablet.png 1x, img/product-cards/big-food-with-buckwheat-tablet@2x.png 2x"
                     width="168" height="200">
                   <img class="product-cards__image" src="img/product-cards/big-food-with-buckwheat.png" width="84"
-                    height="100"
-                    srcset="img/product-cards/big-food-with-buckwheat@2x.png 2x"
+                    height="100" srcset="img/product-cards/big-food-with-buckwheat@2x.png 2x"
                     alt="Корм с гречкой 1000гр.">
                 </picture>
                 <div class="product-cards__block-info">
@@ -267,14 +281,14 @@
             <li class="product-cards__item">
               <div class="product-cards__item-wrapper">
                 <picture>
-                  <source media="(min-width: 1440px)" srcset="img/product-cards/small-food-with-rice-desktop.png 1x, img/product-cards/small-food-with-rice-desktop@2x.png 2x"
+                  <source media="(min-width: 1440px)"
+                    srcset="img/product-cards/small-food-with-rice-desktop.png 1x, img/product-cards/small-food-with-rice-desktop@2x.png 2x"
                     width="163" height="174">
-                  <source media="(min-width: 768px)" srcset="img/product-cards/small-food-with-rice-tablet.png 1x, img/product-cards/small-food-with-rice-tablet@2x.png 2x"
+                  <source media="(min-width: 768px)"
+                    srcset="img/product-cards/small-food-with-rice-tablet.png 1x, img/product-cards/small-food-with-rice-tablet@2x.png 2x"
                     width="163" height="174">
                   <img class="product-cards__image" src="img/product-cards/small-food-with-rice.png" width="72"
-                    height="84"
-                    srcset="img/product-cards/small-food-with-rice@2x.png 2x"
-                    alt="Корм с рисом 500гр.">
+                    height="84" srcset="img/product-cards/small-food-with-rice@2x.png 2x" alt="Корм с рисом 500гр.">
                 </picture>
 
                 <div class="product-cards__block-info">
@@ -409,24 +423,36 @@
       </a>
       <ul class="main-footer__social-list">
         <li class="main-footer__social-item">
-          <a class="main-footer__social-link main-footer__social-link--vkontakte" href="https://vk.com/htmlacademy">
+          <a class="main-footer__social-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Мы в Вконтакте </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22">
+              <use href="img/sprite.svg#footer_vkontakte" />
+            </svg>
           </a>
         </li>
         <li class="main-footer__social-item">
-          <a class="main-footer__social-link main-footer__social-link--youtube"
-            href="https://www.youtube.com/user/htmlacademyru">
+          <a class="main-footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden"> Мы в Ютубе </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22">
+              <use href="img/sprite.svg#footer_youtube" />
+            </svg>
           </a>
         </li>
         <li class="main-footer__social-item">
-          <a class="main-footer__social-link main-footer__social-link--telegram" href="https://t.me/htmlacademy">
+          <a class="main-footer__social-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden"> Мы в Телеграме </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="22">
+              <use href="img/sprite.svg#footer_telegram" />
+            </svg>
           </a>
         </li>
       </ul>
-      <a class="main-footer__logo-html-academy-link main-footer__logo-html-academy-link--html"
-        href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="main-footer__logo-html-academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span>HTML Academy</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34">
+          <use href="img/sprite.svg#footer_logo-html-academy" />
+        </svg>
+      </a>
     </div>
   </footer>
 </body>

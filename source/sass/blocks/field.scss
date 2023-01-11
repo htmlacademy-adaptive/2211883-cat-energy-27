@@ -33,16 +33,18 @@
 
   &--phone {
     padding: 15px 0 14px 15px;
-    background-image: url("../img/cat-data/phone-icon.svg");
+    background-image: url("../img/sprite.svg#cat-data_phone-icon");
     background-repeat: no-repeat;
     background-position: center right 15px;
+    background-size: 20px 20px;
   }
 
   &--email {
     padding: 14px 0 13px 15px;
-    background-image: url("../img/cat-data/email-icon.svg");
+    background-image: url("../img/sprite.svg#cat-data_email-icon");
     background-repeat: no-repeat;
     background-position: center right 15px;
+    background-size: 20px 20px;
   }
 }
 
