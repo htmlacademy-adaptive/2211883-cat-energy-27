@@ -32,7 +32,7 @@
 }
 
 .main-footer__logo-link {
-  padding: 39px 0 32px 0;
+  padding: 39px 0 19px 0;
   display: flex;
   justify-content: center;
   border-bottom: 1px solid #d9d9d9;
@@ -65,7 +65,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 22px 20px;
+  margin: 18px 0;
   --fill: #666666;
 
   &:hover {
@@ -89,6 +89,8 @@
   .main-footer__social-list {
     margin: 0;
     padding: 0;
+    padding-left: 24px;
+    padding-top: 6px;
     gap: 26px;
     border-bottom: none;
   }
@@ -101,12 +103,17 @@
   .main-footer__logo-html-academy-link {
     padding: 0;
     margin: 0;
-    gap: 23px;
+    gap: 27px;
+  }
+
+  .main-footer__logo-text {
+    width: 143px;
+    height: 26px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-footer__wrapper {
-    padding: 57px 110px 58px;
+    padding: 67px 110px 58px;
   }
 }

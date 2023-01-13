@@ -17,16 +17,18 @@
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 13px;
   max-width: 98px;
 
   &--all {
     text-align: center;
     max-width: none;
+    margin-bottom: 8px;
   }
 }
 
 .product-cards__table-element {
+  padding: 0;
   font-family: "Lato", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -72,7 +74,7 @@
 }
 
 .product-cards__button-all {
-  height: 40px;
+  min-height: 40px;
   width: 280px;
   padding: 0;
   margin: 0 auto;
@@ -103,7 +105,7 @@
 }
 
 .product-cards__item {
-  padding: 20px 20px 26px;
+  padding: 20px 20px 25px;
   position: relative;
   border-bottom: 1px solid $special_grey-2;
 
@@ -117,7 +119,7 @@
     height: 30px;
     position: absolute;
     left: calc(50%);
-    top: -39px;
+    top: -34px;
     transform: translateX(-50%);
     background-image: url("../img/sprite.svg#product-cards_plus");
     background-repeat: no-repeat;
@@ -135,11 +137,16 @@
 
 .product-cards__table {
   width: 100%;
+  border-collapse: collapse;
 }
 
 .product-cards__block-info {
   width: 100%;
-  margin-bottom: 9px;
+  margin-bottom: 22px;
+
+  &--plus {
+    margin-bottom: 20px;
+  }
 }
 
 .product-cards__description {
@@ -151,7 +158,6 @@
   text-align: center;
   color: $special_dark-grey;
   margin: 0;
-  margin-bottom: 22px;
 }
 
 @media (min-width: $tablet-width) {
@@ -250,14 +256,14 @@
       margin-top: 0;
       display: flex;
       flex-direction: column;
-      gap: 2px;
     }
   }
 
   .product-cards__column {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 9px;
+    padding-bottom: 8px;
+    padding-left: 1px;
     border-bottom: 1px solid #cdcdcd;
 
     &:not(:last-child) {
@@ -269,7 +275,7 @@
     font-size: 16px;
     line-height: 18px;
     max-width: 165px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .product-cards__button-all {
@@ -279,6 +285,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .product-cards__image {
+    top: 117px;
+  }
+
+  .product-cards__title {
+    line-height: 20px;
+    margin: 0 auto 25px;
+  }
+
   .product-cards__list {
     grid-template-columns: 245px 245px 245px 245px;
     grid-template-rows: 431px 431px;
@@ -293,6 +308,8 @@
 
   .product-cards__button {
     width: 168px;
+    margin-bottom: 2px;
+    margin-right: 2px;
   }
 
   .product-cards__button-all {

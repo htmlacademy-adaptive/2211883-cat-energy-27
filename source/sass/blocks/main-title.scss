@@ -1,4 +1,8 @@
 .main-title {
+  margin: 28px 0 0;
+  padding-bottom: 39px;
+  padding-left: 20px;
+
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -6,9 +10,7 @@
   line-height: 36px;
   text-decoration: none;
   color: #000000;
-  margin: 0;
-  padding-bottom: 41px;
-  padding-left: 20px;
+
   border-bottom: 1px solid $special_grey-2;
 }
 
@@ -22,7 +24,7 @@
     padding-left: 30px;
     padding-bottom: 0;
     margin-bottom: 163px;
-    margin-top: 63px;
+    margin-top: 60px;
   }
 }
 

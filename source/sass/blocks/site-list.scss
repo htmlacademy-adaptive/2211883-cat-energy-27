@@ -1,5 +1,5 @@
 .site-list__item {
-  padding: 22px 0 24px;
+  padding: 22px 0 23px;
   display: flex;
   justify-content: center;
   background-color: #ffffff;
@@ -44,7 +44,7 @@
         height: 2px;
         width: 100%;
         left: 0;
-        bottom: -8px;
+        bottom: -10px;
         background-color: #68b738;
       }
     }
@@ -88,6 +88,10 @@
     &--active {
       .header--hero &::after {
         background-color: #ffffff;
+      }
+
+      &::after {
+        bottom: -8px;
       }
     }
   }

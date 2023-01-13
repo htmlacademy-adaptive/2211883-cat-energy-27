@@ -7,7 +7,7 @@
 }
 
 .address__title {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Oswald Medium", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -50,6 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .address__title {
+    padding-top: 2px;
     font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -86,7 +87,7 @@
   }
 
   .address__wrapper {
-    padding: 56px 70px;
+    padding: 56px 70px 60px;
   }
 }
 
@@ -104,5 +105,14 @@
     position: absolute;
     z-index: 10;
     background-color: #ffffff;
+  }
+
+  .address__list {
+    display: flex;
+    gap: 78px;
+  }
+
+  .address__text {
+    text-align: left;
   }
 }
