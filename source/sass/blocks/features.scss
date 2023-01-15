@@ -71,13 +71,14 @@
 
   &::after {
     content: "";
-    background-image: url("../img/features/features-arrow.svg");
+    background-image: url("../img/sprite.svg#features_features-arrow");
     width: 24px;
     height: 12px;
   }
 
   &:hover::after {
-    transform: scaleX(calc(4 / 3));
+    background-image: url("../img/sprite.svg#features_features-arrow-hover");
+    width: 32px;
   }
 
   &:active {
