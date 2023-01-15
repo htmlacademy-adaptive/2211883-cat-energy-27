@@ -5,12 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <link rel="stylesheet" href="./css/style.min.css">
+
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" src="js/scripts.min.js" as="script">
+  <link rel="preload" src="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" src="fonts/oswald/oswaldmedium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" src="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" crossorigin="use-credentials" href="manifest.webmanifest">
-  <script src="./js/scripts.min.js"></script>
+  <script src="js/scripts.min.js"></script>
 </head>
 
 <body class="page__body">
@@ -124,37 +131,17 @@
         <div class="benefits__wrapper">
           <h2 class="benefits__title">Как это работает</h2>
           <ul class="benefits__list">
-            <li class="benefits__item">
-              <div class="benefits__item_icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="32">
-                  <use href="img/sprite.svg#benefits_leaf" />
-                </svg>
-              </div>
+            <li class="benefits__item benefits__item--leaf">
               <p class="benefits__text">Функциональное питание содержит только полезные питательные вещества.
               </p>
             </li>
-            <li class="benefits__item">
-              <div class="benefits__item_icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="29">
-                  <use href="img/sprite.svg#benefits_powder" />
-                </svg>
-              </div>
+            <li class="benefits__item benefits__item--powder">
               <p class="benefits__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
-            <li class="benefits__item">
-              <div class="benefits__item_icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30">
-                  <use href="img/sprite.svg#benefits_cutlery" />
-                </svg>
-              </div>
+            <li class="benefits__item benefits__item--cultery">
               <p class="benefits__text">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
-            <li class="benefits__item">
-              <div class="benefits__item_icon-wrapper">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="31">
-                  <use href="img/sprite.svg#benefits_watch" />
-                </svg>
-              </div>
+            <li class="benefits__item benefits__item--watch">
               <p class="benefits__text">Уже через месяц наслаждайтесь изменениями к лучшему <br class="visually-hidden__only-tablet"> вашего питомца!</p>
             </li>
           </ul>
