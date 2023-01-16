@@ -2,7 +2,7 @@
   position: relative;
   display: inline-block;
   margin: 0 20px 35px;
-  padding-right: 40px;
+  padding-right: 22px;
   max-width: 187px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -11,15 +11,23 @@
   line-height: 26px;
   color: #000000;
   background-color: #ffffff;
+  --top: 50%;
+
 
   &--legend {
     margin-bottom: 34px;
+    --top: 60%;
+  }
+
+  &--contacts {
+    padding-right: 14px;
+    --top: 30%;
   }
 
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: var(--top);
     height: 2px;
     width: 100vw;
     background-color: #68b738;
@@ -30,7 +38,7 @@
   &::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: var(--top);
     height: 2px;
     width: 100vw;
     background-color: #68b738;
@@ -41,15 +49,21 @@
 
 @media (min-width: $tablet-width) {
   .details-title {
+    padding-right: 39px;
     margin: 0 0 76px 69px;
     max-width: 600px;
     font-size: 36px;
     line-height: 36px;
     color: #000000;
+    --top: 60%;
 
     &--legend {
       margin-bottom: 57px;
       margin-left: 70px;
+    }
+
+    &--contacts {
+      padding-right: 40px;
     }
   }
 }

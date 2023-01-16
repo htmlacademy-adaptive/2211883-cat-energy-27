@@ -36,7 +36,7 @@
   text-decoration: none;
   color: $special_dark-grey;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 19px;
 }
 
 .statistics__title-index {
@@ -58,7 +58,7 @@
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
 }
@@ -69,7 +69,7 @@
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   position: relative;
-  padding: 14.47px 0 17.53px;
+  padding: 14px 0 8px;
 }
 
 .statistics__text-index {
@@ -190,6 +190,9 @@
     color: #000000;
     max-width: 175px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
   }
 
   .statistics__item {
@@ -202,7 +205,7 @@
   }
 
   .statistics__wrapper {
-    padding: 43px 0 0;
+    padding: 0;
   }
 
   .statistics__inner-wrapper {
@@ -246,6 +249,7 @@
     display: flex;
     gap: 63px;
     max-width: none;
+    flex-direction: row;
   }
 
   .statistics__price-value {
@@ -261,7 +265,7 @@
   .statistics__full-info-wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 70px 110px 75px;
+    padding: 70px 110px 76px;
     background: #f2f2f2;
     position: relative;
 
@@ -301,5 +305,9 @@
 
   .statistics__text-index {
     background-color: #f2f2f2;
+  }
+
+  .statistics__item {
+    padding: 15px 0 15px;
   }
 }

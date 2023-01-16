@@ -69,10 +69,12 @@
 
 @media (min-width: $tablet-width) {
   .stats__wrapper {
+    padding-top: 0;
+    margin-bottom: -20px;
     background-color: #ffffff;
     background-image: url("../img/stats/jar-of-chicken-tablet.png");
     background-size: 709px 609px;
-    background-position: 0 calc(100% - 20px);
+    background-position: 30px calc(100% - 20px);
     background-repeat: no-repeat, no-repeat;
 
     &::before {
@@ -86,7 +88,8 @@
 
   .stats__description {
     margin: 0;
-    margin-bottom: 49px;
+    margin-bottom: 47px;
+    padding-left: 99px;
 
     font-family: "Oswald", "Arial", sans-serif;
     font-style: normal;
@@ -95,7 +98,6 @@
     line-height: 20px;
     text-transform: uppercase;
     text-align: left;
-    padding-left: 119px;
     color: #000000;
   }
 
@@ -106,7 +108,7 @@
   .stats__programm-card {
     height: 54px;
     width: 244px;
-    margin-left: 120px;
+    margin-left: 100px;
     margin-bottom: 526px;
     box-sizing: border-box;
 
@@ -137,10 +139,10 @@
   .stats__wrapper {
     min-height: 595px;
     box-sizing: border-box;
-    padding: 124px 190px 0;
+    padding: 107px 190px 0;
     background-image: url("../img/stats/jar-of-chicken-desktop.png");
     background-size: 552px 499px;
-    background-position: 558px 52px;
+    background-position: 558px 25px;
     background-color: transparent;
 
     @media (min-resolution: 2dppx) {

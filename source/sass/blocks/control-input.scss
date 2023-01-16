@@ -8,8 +8,8 @@
 
   &:checked + .control-mark::after {
     position: absolute;
-    top: 8.5px;
-    left: 8.5px;
+    top: 8px;
+    left: 8px;
     content: "";
     width: 13px;
     height: 13px;
@@ -36,6 +36,7 @@
     height: 30px;
     border-radius: 50%;
     border: 1px solid $special_grey;
+    box-sizing: border-box;
   }
 
   &--checkbox + .control-mark {
@@ -45,6 +46,7 @@
     height: 30px;
     border-radius: 0;
     border: 1px solid $special_grey;
+    box-sizing: border-box;
   }
 
   &:disabled + .control-mark {
@@ -69,8 +71,8 @@
     &:checked + .control-mark::after {
       width: 18px;
       height: 18px;
-      top: 11px;
-      left: 11px;
+      top: 9.5px;
+      left: 9.5px;
     }
 
     &--checkbox:checked + .control-mark::after {

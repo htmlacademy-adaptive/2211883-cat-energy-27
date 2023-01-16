@@ -3,6 +3,10 @@
   display: flex;
   gap: 13px;
   align-items: center;
+
+  &--information {
+    gap: 10px;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -15,27 +15,31 @@
 }
 
 @media (min-width: $tablet-width) {
-  .title--home {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 60px;
-    text-align: left;
-    color: #000000;
-    padding-right: 100px;
-    padding-left: 117px;
-    margin-bottom: 41px;
-    margin-top: 62px;
+  .title {
+    &--home {
+      font-family: "Oswald", "Arial", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 60px;
+      line-height: 60px;
+      text-align: left;
+      color: #000000;
+      padding-right: 100px;
+      padding-left: 97px;
+      margin-bottom: 41px;
+      margin-top: 62px;
+    }
   }
 }
 
 
 @media (min-width: $desktop-width) {
-  .title--home {
-    width: 450px;
-    margin: 0;
-    margin-bottom: 40px;
-    padding: 0;
+  .title {
+    &--home {
+      width: 450px;
+      margin: 0;
+      margin-bottom: 40px;
+      padding: 0;
+    }
   }
 }

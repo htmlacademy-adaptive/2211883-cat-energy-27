@@ -9,3 +9,21 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.visually-hidden__only-tablet {
+  display: none;
+}
+
+.visually-hidden__only-mobile {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .visually-hidden__only-mobile {
+    display: none;
+  }
+
+  .visually-hidden__only-tablet {
+    display: block;
+  }
+}

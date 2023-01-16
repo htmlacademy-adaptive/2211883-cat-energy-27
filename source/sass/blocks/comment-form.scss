@@ -10,7 +10,7 @@
   width: calc(100% - 40px);
   box-sizing: border-box;
   min-height: 150px;
-  margin: 0 20px 23px;
+  margin: 0 20px 20px;
 
   &:hover {
     border: 1px solid $special_grey;
@@ -35,13 +35,13 @@
     max-width: calc(100% - 137px);
     box-sizing: border-box;
     min-height: 174px;
-    margin: 0 67px 65px 70px;
+    margin: 0 67px 61px 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .comment-form {
     max-width: calc(100% - 220px);
-    margin: 0 110px 67px 110px;
+    margin: 0 110px 62px 110px;
   }
 }
