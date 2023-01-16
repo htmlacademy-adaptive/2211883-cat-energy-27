@@ -56,6 +56,7 @@
 
 .features-card {
   min-height: 24px;
+  max-width: 340px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -72,13 +73,16 @@
   &::after {
     content: "";
     background-image: url("../img/sprite.svg#features_features-arrow");
-    width: 24px;
+    background-position: left;
+    background-size: 24px 12px;
+    background-repeat: no-repeat;
+    min-width: 32px;
     height: 12px;
   }
 
   &:hover::after {
     background-image: url("../img/sprite.svg#features_features-arrow-hover");
-    width: 32px;
+    background-size: 32px 12px;
   }
 
   &:active {

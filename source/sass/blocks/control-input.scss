@@ -8,8 +8,9 @@
 
   &:checked + .control-mark::after {
     position: absolute;
-    top: 8px;
-    left: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     content: "";
     width: 13px;
     height: 13px;
@@ -19,8 +20,6 @@
 
   &--checkbox:checked + .control-mark::after {
     position: absolute;
-    top: 8.09px;
-    left: 6.25px;
     width: 18px;
     height: 14px;
     content: "";
@@ -71,13 +70,9 @@
     &:checked + .control-mark::after {
       width: 18px;
       height: 18px;
-      top: 9.5px;
-      left: 9.5px;
     }
 
     &--checkbox:checked + .control-mark::after {
-      top: 11px;
-      left: 8px;
       width: 24px;
       height: 18.67px;
     }
