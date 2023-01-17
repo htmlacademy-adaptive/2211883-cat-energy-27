@@ -99,8 +99,11 @@
         <div class="stats__wrapper">
           <h1 class=" title title--home">Функциональное питание для котов</h1>
           <p class="stats__description">Занялся собой? Займись котом!</p>
-          <img class="stats__image" src="img/stats/jar-of-chicken.png" width="280" height="270"
+          <picture>
+            <source type="image/webp" srcset="img/stats/jar-of-chicken.webp" width="280" height="270">
+            <img class="stats__image" src="img/stats/jar-of-chicken.png" width="280" height="270"
             srcset="img/stats/jar-of-chicken@2x.png 2x" alt="Корм со вкусом курицы.">
+          </picture>
           <a class="stats__programm-card" href="form.html"> Подобрать программу
           </a>
         </div>
@@ -181,6 +184,11 @@
             <div class="cat-slider__wrapper">
               <div class="cat-slider__image-container">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/cat-slider/cat-slider-before-tablet@1x.webp 1x, img/cat-slider/cat-slider-before-tablet@2x.webp 2x"
+                    width="560" height="512">
+                  <source type="image/webp" width="280" height="256"
+                    srcset="img/cat-slider/cat-slider-before-mobile@1x.webp 1x, img/cat-slider/cat-slider-before-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/cat-slider/cat-slider-before-tablet@1x.png 1x, img/cat-slider/cat-slider-before-tablet@2x.png 2x"
                     width="560" height="512">
@@ -190,6 +198,11 @@
                     alt="Кот до диеты">
                 </picture>
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/cat-slider/cat-slider-after-tablet@1x.webp 1x, img/cat-slider/cat-slider-after-tablet@2x.webp 2x"
+                    width="560" height="512">
+                  <source type="image/webp" width="280" height="256"
+                    srcset="img/cat-slider/cat-slider-after-mobile@1x.webp 1x, img/cat-slider/cat-slider-after-mobile@2x.webp 2x">
                   <source media="(min-width: 768px)"
                     srcset="img/cat-slider/cat-slider-after-tablet@1x.png 1x, img/cat-slider/cat-slider-after-tablet@2x.png 2x"
                     width="560" height="512">
@@ -202,7 +215,9 @@
               <input type="range" min="0" max="100" value="50" aria-label="Percentage of before photo shown"
                 class="cat-slider__input">
               <div class="cat-slider__line" aria-hidden="true"></div>
-              <div class="cat-slider__button" aria-hidden="true"></div>
+              <div class="cat-slider__button" aria-hidden="true">
+                <span class="visually-hidden">Кнопка слайдера</span>
+              </div>
             </div>
           </div>
         </div>
